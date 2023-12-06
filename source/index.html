@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>Функциональное питание для котов "Cat Energy"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="body">
   <header class="main-header">
-    <a class="logo__link" aria-current="page" href="#">
-      <img class="logo__image" src="#" width="33" height="38" alt="Логотип-картинка Cat Energy">
-      <img class="logo__text" src="#" width="101" height="18" alt="Логотип-текст Cat Energy">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list list-reset">
-          <li class="main-navigation__item--active">
-            <a class="main-navigation__link" aria-current="page" href="index.html">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+    <div class="main-header__container container">
+      <a class="main-header__logo logo" aria-current="page" href="index.html">
+        <img class="logo__image" src="#" width="33" height="38" alt="Логотип-картинка Cat Energy">
+        <img class="logo__text" src="#" width="101" height="18" alt="Логотип-текст Cat Energy">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list list-reset">
+            <li class="main-navigation__item--active">
+              <a class="main-navigation__link" aria-current="page" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section class="hero">
+      <div class="hero__container container">
+        <h1 class="hero__title hero__title--mobile title">Функциональное питание для котов</h1>
+        <p class="hero__text hero__text--mobile">Занялся собой? Займись котом!</p>
+        <a class="hero__button button" href="#">Подобрать программу</a>
+        <!-- Картинка -->
       </div>
-    </nav>
+    </section>
   </header>
   <main class="main-index">
-    <section class="hero">
-      <h1 class="hero__title hero__title--mobile title">Функциональное питание для котов</h1>
-      <p class="hero__text hero__text--mobile">Занялся собой? Займись котом!</p>
-      <a class="hero__button button" href="#">Подобрать программу</a>
-    </section>
+
     <section class="program">
       <h2 class="visually-hidden">Программы питания</h2>
       <div class="program__option program--slim">
@@ -88,10 +93,10 @@
         <img class="comparison__before" src="#" width="280" height="256" alt="Располневший кот Борис до приема корма Cat Energy">
         <img class="comparison__after" src="#" width="280" height="256" alt="Похудевший кот Борис после приема корма Cat Energy">
         <div class="slider-bar">
-          <button class="slider-bar__toggle-button slider-bar__toggle-button--before">
+          <button class="slider-bar__toggle-button slider-bar__toggle-button--before" type="button">
             <span class="visually-hidden">Показать фотографию "до"</span>
           </button>
-          <button class="slider-bar__toggle-button slider-bar__toggle-button--after">
+          <button class="slider-bar__toggle-button slider-bar__toggle-button--after" type="button">
             <span class="visually-hidden">Показать фотографию "после"</span>
           </button>
         </div>
@@ -110,19 +115,19 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="footer__logo-link">
+    <a class="footer__logo-link" href="#">
       <img class="footer__logo-text" src="#" width="128" height="24" alt="Логотип-текст Cat Energy">
     </a>
     <div class="main-footer__social social">
       <ul class="social__list list-reset">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte">Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube">YouTube</a>
+          <a class="social__link social__link--youtube" href="#">YouTube</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram">Телеграм</a>
+          <a class="social__link social__link--telegram" href="#">Телеграм</a>
         </li>
       </ul>
     </div>
@@ -132,6 +137,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="scripts/index.js" defer></script>
 </body>
 
 </html>
