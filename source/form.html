@@ -11,10 +11,10 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo-mobile" aria-current="page" href="#">
+    <a class="main-header__logo-mobile" href="index.html">
       <img class="main-header__logo-mobile-image" src="#" width="33" height="38" alt="Логотип-картинка Cat Energy">
     </a>
-    <a class="main-header__logo" aria-current="page" href="#">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="#" width="101" height="18" alt="Логотип Cat Energy">
     </a>
     <nav class="main-navigation">
@@ -23,14 +23,14 @@
       </button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list list-reset">
+          <li class="main-navigation__item">
+            <a main-navigation__link href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a main-navigation__link href="catalog.html">Каталог продукции</a>
+          </li>
           <li class="main-navigation__item--active">
-            <a aria-current="page" href="index.html">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#">Каталог продукции</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#">Подбор программы</a>
+            <a main-navigation__link aria-current="page" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -120,42 +120,37 @@
     <section class="contacts">
       <h2 class="visually-hidden">Адрес компании Cat Energy</h2>
       <div class="contacts__wrapper">
-        <h4 class="contacts__invitation">Приглашаем <br>к сотрудничеству дилеров!</h4>
+        <p class="contacts__invitation">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая
-          Конюшенная, д. 19/8 <br>Санкт-Петербург</address>
+          <br>Конюшенная, д.&nbsp;19/8 <br>Санкт-Петербург
+        </address>
       </div>
-      <img class="map" src="#" width="768" height="400" alt="Компания Cat Energy на карте Санкт-Петербурга">
-      <img class="map-pin" src="#" width="113" height="106" alt="Флажок местоположения Cat Energy на карте">
+      <img class="map" src="#" width="320" height="362" alt="Компания Cat Energy на карте Санкт-Петербурга">
+      <img class="map-pin" src="#" width="57" height="53" alt="Флажок местоположения Cat Energy на карте">
     </section>
   </main>
   <footer class="main-footer">
-    <a class="footer__logo">
-      <img class="footer__logo-image" src="#" width="128" height="24" alt="Логотип Cat Energy">
+    <a class="footer__logo-link">
+      <img class="footer__logo-text" src="#" width="128" height="24" alt="Логотип-текст Cat Energy">
     </a>
     <div class="main-footer__social social">
       <ul class="social__list list-reset">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte">
-            Вконтакте
-          </a>
+          <a class="social__link social__link--vkontakte">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube">
-            YouTube
-          </a>
+          <a class="social__link social__link--youtube">YouTube</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram">
-            Телеграм
-          </a>
+          <a class="social__link social__link--telegram">Телеграм</a>
         </li>
       </ul>
     </div>
     <div class="copyright">
-      <a class="copyright__logo">
-        HTML Academy
+      <a class="copyright__logo-text" href="https://htmlacademy.ru/">HTML Academy</a>
+      <a class="copyright__logo-image" href="https://htmlacademy.ru/">
+        <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
       </a>
-      <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
     </div>
   </footer>
 </body>
