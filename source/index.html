@@ -13,8 +13,13 @@
     <div class="main-header__container container">
       <div class="main-header__menu">
         <a class="main-header__logo logo" aria-current="page" href="index.html">
-          <img class="logo__image logo__image--icon" src="#" width="33" height="38" alt="Логотип-картинка Cat Energy.">
-          <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Логотип-текст Cat Energy.">
+          <picture>
+            <source type="image/svg+xml" width="70" height="59" media="(min-width: 1400px)" srcset="images/logos/logo-desktop.svg">
+            <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)" srcset="images/logos/logo-tablet.svg">
+            <img class="logo__image logo__image--icon" src="images/logos/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy - котик-супергерой.">
+          </picture>
+
+          <img class="logo__image logo__image--text" src="images/logos/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat Energy.">
         </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -40,7 +45,11 @@
         <p class="hero__text">Занялся собой? Займись котом!</p>
       </div>
       <a class="hero__button button" href="#">Подобрать программу</a>
-      <img class="hero__image" src="#" width="280" height="270" alt="Корм Cat Energy Pro с курицей.">
+      <picture>
+        <source type="image/png" width="552" height="499" media="(min-width: 1440px)" srcset="images/index/hero-cans/can-desktop@1px.png, images/index/hero-cans/can-desktop@2x.png">
+        <source type="image/png" width="709" height="609" media="(min-width: 768px)" srcset="images/index/hero-cans/can-tablet@1px.png, images/index/hero-cans/can-tablet@2x.png">
+        <img class="hero__image" src="images/index/hero-cans/can-mobile@1x.png" width="280" height="270" srcset="images/index/hero-cans/can-mobile@2x.png" alt="Банка с кормом Cat Energy Pro с курицей 500 грамм.">
+      </picture>
     </section>
   </header>
   <main class="main">
@@ -93,7 +102,10 @@
       </div>
       <div class="example__slider slider">
         <div class="slider__image slider__image--before">
-          <img src="#" width="280" height="256" alt="Располневший кот Борис до приема корма Cat Energy.">
+          <picture>
+            <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/index/slider/cat-before-tablet@1px.png, images/index/slider/cat-before-tablet@2x.png">
+            <img src="images/index/slider/cat-before-mobile@1x.png" srcset="images/index/slider/cat-before-mobile@2x.png" width="280" height="256" alt="Располневший кот Борис до приема корма Cat Energy.">
+          </picture>
         </div>
         <div class="slider__image slider__image--after">
           <img src="#" width="280" height="256" alt="Похудевший кот Борис после приема корма Cat Energy.">
@@ -128,18 +140,18 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo logo" aria-current="page" href="#">
-        <img class="footer__logo-text" src="#" width="128" height="24" alt="Логотип-текст Cat Energy.">
+      <a class="footer__logo logo" aria-current="page" href="index.html">
+        <img class="footer__logo-text" src="images/logos/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy.">
       </a>
       <ul class="footer__social social list-reset">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">YouTube</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">Телеграм</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
         </li>
       </ul>
       <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
