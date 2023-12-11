@@ -13,7 +13,11 @@
     <div class="main-header__container container">
       <div class="main-header__menu">
         <a class="main-header__logo logo" href="index.html">
-          <img class="logo__image logo__image--icon" src="#" width="33" height="38" alt="Логотип-картинка Cat Energy.">
+          <picture>
+            <source type="image/svg+xml" width="70" height="59" media="(min-width: 1400px)" srcset="images/logos/logo-desktop.svg">
+            <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)" srcset="images/logos/logo-tablet.svg">
+            <img class="logo__image logo__image--icon" src="images/logos/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy - котик-супергерой.">
+          </picture>
           <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Логотип-текст Cat Energy.">
         </a>
         <button class="main-header__toggle" type="button">
@@ -155,17 +159,17 @@
   <footer class="footer">
     <div class="footer__container container">
       <a class="footer__logo logo" href="index.html">
-        <img class="footer__logo-text" src="#" width="128" height="24" alt="Логотип-текст Cat Energy.">
+        <img class="footer__logo-text" src="images/logos/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy.">
       </a>
       <ul class="footer__social social list-reset">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">YouTube</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">Телеграм</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
         </li>
       </ul>
       <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
