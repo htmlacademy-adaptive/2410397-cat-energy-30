@@ -23,7 +23,7 @@
           <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Логотип-текст Cat Energy.">
         </a>
         <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden burger">Открыть меню</span>
         </button>
         <nav class="main-header__navigation navigation">
           <ul class="navigation__list list-reset">
@@ -42,9 +42,10 @@
     </div>
   </header>
   <main class="main">
+    <h1 class="visually-hidden">Форма для выбора программы питания для кота</h1>
     <section class="program-choice">
       <div class="program-choice__container container">
-        <h1 class="program-choice__title title">Подбор программы</h1>
+        <h2 class="program-choice__title main-title">Подбор программы</h2>
         <p class="program-choice__info">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="program-choice__form form" action="https://echo.htmlacademy.ru/" method="get">
@@ -86,7 +87,7 @@
         </div>
         <fieldset class="form__group form__group--owner">
           <legend class="visually-hidden" aria-hidden="true">Контактные данные (владельца кота)</legend>
-          <h2 class="form__legend">Контактные данные (владельца кота)</h2>
+          <h3 class="form__legend section-title">Контактные данные (владельца кота) </h3>
           <div class="form__wrapper">
             <ul class="form__list">
               <li class="form__item">
@@ -106,12 +107,12 @@
         </fieldset>
         <fieldset class="form__group form__group--comment">
           <legend class="visually-hidden" aria-hidden="true">Комментарий</legend>
-          <h2 class="form__legend">Комментарий</h2>
+          <h3 class="form__legend section-title">Комментарий</h3>
           <textarea class="form__comment field" name="comment" id="comment" placeholder="Расскажите обо всех повaдках кота"></textarea>
         </fieldset>
         <fieldset class="form__group form__group--checkbox">
           <legend class="visually-hidden" aria-hidden="true">Дополнительно</legend>
-          <h2 class="form__legend">Дополнительно</h2>
+          <h3 class="form__legend section-title">Дополнительно</h3>
           <ul class="control control--checkbox list-reset">
             <li class="control__item">
               <input class="control__input control__input--checkbox" type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked>
@@ -161,7 +162,7 @@
   <footer class="footer">
     <div class="footer__container container">
       <a class="footer__logo logo" href="index.html">
-        <img class="footer__logo-text" src="images/logos/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy.">
+        <img class="logo__image logo__image--text" src="images/logos/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy.">
       </a>
       <ul class="footer__social social list-reset">
         <li class="social__item">
