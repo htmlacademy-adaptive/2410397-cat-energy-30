@@ -42,10 +42,9 @@
     </div>
   </header>
   <main class="main">
-    <h1 class="visually-hidden">Форма для выбора программы питания для кота</h1>
     <section class="program-choice">
       <div class="program-choice__container container">
-        <h2 class="program-choice__title main-title">Подбор программы</h2>
+        <h1 class="program-choice__title main-title">Подбор программы</h1>
         <p class="program-choice__info">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="program-choice__form form" action="https://echo.htmlacademy.ru/" method="get">
@@ -105,11 +104,11 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__group form__group--comment">
-          <legend class="visually-hidden" aria-hidden="true">Комментарий</legend>
+        <div class="form__group form__group--comment">
           <h3 class="form__legend section-title">Комментарий</h3>
+          <label class="visually-hidden" for="comment">Дополнительная информация о коте</label>
           <textarea class="form__textarea field" name="comment" id="comment" placeholder="Расскажите обо всех повaдках кота"></textarea>
-        </fieldset>
+        </div>
         <fieldset class="form__group form__group--checkbox">
           <legend class="visually-hidden" aria-hidden="true">Дополнительно</legend>
           <h3 class="form__legend section-title">Дополнительно</h3>

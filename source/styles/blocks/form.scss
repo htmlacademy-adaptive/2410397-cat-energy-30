@@ -20,7 +20,12 @@
 
 // .form__item {}
 
-// .form__label {}
+.form__label {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
 // .form__input {}
 
@@ -34,6 +39,11 @@
 
 // .form__textarea {}
 
-// .form__button {}
+.form__button {
+  border: none;
+}
 
-// .form__note {}
+.form__note {
+  line-height: 16px;
+  color: #000000;
+}

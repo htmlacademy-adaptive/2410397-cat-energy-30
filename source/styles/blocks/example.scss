@@ -1,8 +1,12 @@
 // .example {}
 
-// .example__container {}
+.example__container {
+  background-color: #eaeaea;
+}
 
-// .example__title {}
+.example__title {
+  line-height: 40px;
+}
 
 // .example__content {}
 
@@ -10,8 +14,13 @@
 
 // .example__results {}
 
-// .example__cost {}
+.example__cost {
+  font-family: $secondary-font;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
 
-// .example__cost-value {}
+// .example__cost--value {}
 
 // .example__slider {}

@@ -2,6 +2,14 @@
 
 // .example-results__info {}
 
-// .example-results__value {}
+.example-results__value {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
 
-// .example-results__text {}
+.example-results__text {
+  font-size: 12px;
+  line-height: 12px;
+}

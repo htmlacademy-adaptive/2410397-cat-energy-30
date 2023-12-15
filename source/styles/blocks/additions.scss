@@ -1,14 +1,24 @@
 // .additions {}
 
-// .additions__heading {}
+.additions__heading {
+  line-height: 24px;
+}
 
 // .additions__wrapper {}
 
 // .additions__list {}
 
-// .additions__item {}
+.additions__item {
+  line-height: 14px;
+}
 
-// .additions__item-title {}
+.additions__item-title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
 
 // .additions__item-text {}
 
@@ -16,6 +26,12 @@
 
 // .additions__button {}
 
-// .additions__gift {}
+.additions__gift {
+  background-color: $bg-extra;
+}
 
-// .additions__gift-info {}
+.additions__gift-info {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}

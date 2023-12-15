@@ -14,5 +14,10 @@ img {
 // html {}
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+
+  background-color: #ffffff;
 }

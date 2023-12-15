@@ -4,6 +4,15 @@
 
 // .navigation__item {}
 
-// .navigation__link {}
+.navigation__link {
+  display: inline-block;
+
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
 // .navigation__link--current {}
