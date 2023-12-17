@@ -1,5 +1,5 @@
 .hero {
-  background-color: $bg-basic;
+  background-color: rgba(104, 183, 56, 0.85);
 }
 
 // .hero__container {}
@@ -10,8 +10,8 @@
 }
 
 .hero__text {
-  font-family: $secondary-font;
   line-height: 14px;
+  font-family: $secondary-font;
   color: #ffffff;
   text-transform: uppercase;
 }

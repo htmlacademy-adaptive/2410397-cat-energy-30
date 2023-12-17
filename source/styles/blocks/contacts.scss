@@ -1,5 +1,5 @@
 .contacts {
-  background-color: $bg-basic-grey;
+  background-color: $bg-extra;
 }
 
 // .contacts__container {}
@@ -11,19 +11,19 @@
 // .contacts__wrapper {}
 
 .contacts__invitation {
-  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  font-family: $secondary-font;
   color: #111111;
   text-transform: uppercase;
 }
 
 .contacts__address {
-  line-height: 20px;
   font-style: normal;
+  line-height: 20px;
 }
 
-// .contacts__adress--city {}
+// .contacts__adress-city {}
 
 // .contacts__map {}
 

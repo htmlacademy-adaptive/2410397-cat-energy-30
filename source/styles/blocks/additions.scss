@@ -13,9 +13,9 @@
 }
 
 .additions__item-title {
-  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  font-family: $secondary-font;
   color: #222222;
   text-transform: uppercase;
 }
@@ -27,7 +27,7 @@
 // .additions__button {}
 
 .additions__gift {
-  background-color: $bg-extra;
+  background-color: rgba(104, 183, 56, 0.85);
 }
 
 .additions__gift-info {
