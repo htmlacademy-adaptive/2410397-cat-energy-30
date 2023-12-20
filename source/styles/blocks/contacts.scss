@@ -1,0 +1,30 @@
+.contacts {
+  background-color: $bg-extra;
+}
+
+// .contacts__container {}
+
+.contacts__container--index {
+  background-color: $white;
+}
+
+// .contacts__wrapper {}
+
+.contacts__invitation {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $almost-black;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  line-height: 20px;
+  font-style: normal;
+}
+
+// .contacts__adress-city {}
+
+// .contacts__map {}
+
+// .contacts__map-link {}

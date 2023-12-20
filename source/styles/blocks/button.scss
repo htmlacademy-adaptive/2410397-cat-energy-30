@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $bg-basic;
+}
+
+.button--secondary {
+  color: $base-color-text;
+
+  background-color: $bg-extra;
+}

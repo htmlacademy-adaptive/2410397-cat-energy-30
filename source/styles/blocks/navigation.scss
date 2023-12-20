@@ -1,0 +1,18 @@
+// .navigation {}
+
+// .navigation__list {}
+
+// .navigation__item {}
+
+.navigation__link {
+  display: inline-block;
+
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// .navigation__link--current {}
