@@ -13,10 +13,10 @@
 }
 
 .additions__item-title {
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
-  font-family: $secondary-font;
-  color: #222222;
+  color: $special-dark-grey;
   text-transform: uppercase;
 }
 
@@ -27,11 +27,11 @@
 // .additions__button {}
 
 .additions__gift {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: $bg-cats;
 }
 
 .additions__gift-info {
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white;
 }

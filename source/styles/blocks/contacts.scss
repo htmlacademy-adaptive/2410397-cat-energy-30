@@ -5,22 +5,22 @@
 // .contacts__container {}
 
 .contacts__container--index {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 // .contacts__wrapper {}
 
 .contacts__invitation {
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  font-family: $secondary-font;
-  color: #111111;
+  color: $almost-black;
   text-transform: uppercase;
 }
 
 .contacts__address {
-  font-style: normal;
   line-height: 20px;
+  font-style: normal;
 }
 
 // .contacts__adress-city {}

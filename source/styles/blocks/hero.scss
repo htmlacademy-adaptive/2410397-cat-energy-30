@@ -6,13 +6,13 @@
 
 .hero__title {
   text-align: center;
-  color: #ffffff;
+  color: $white;
 }
 
 .hero__text {
-  line-height: 14px;
   font-family: $secondary-font;
-  color: #ffffff;
+  line-height: 14px;
+  color: $white;
   text-transform: uppercase;
 }
 

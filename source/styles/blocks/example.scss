@@ -1,7 +1,7 @@
 // .example {}
 
 .example__container {
-  background-color: #eaeaea;
+  background-color: $bg-for-example;
 }
 
 .example__title {
@@ -17,7 +17,7 @@
 .example__cost {
   font-family: $secondary-font;
   line-height: 20px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
