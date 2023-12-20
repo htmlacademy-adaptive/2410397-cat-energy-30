@@ -2,18 +2,29 @@
 
 // .advantages__container {}
 
-.advantages__title {
-  line-height: 40px;
-}
+// .advantages__title {}
 
 // .advantages__list {}
 
-// .advantages__item {}
+.advantages__item {
+  background-color: $bg-basic;
+  background-repeat: no-repeat;
+  background-position: center, contain;
+  background-size: 30px 32px;
+}
 
-// .advantages__item--health {}
+.advantages__item--health {
+  background-image: url("../../images/icons/stack.svg#leaf");
+}
 
-// .advantages__item--powder {}
+.advantages__item--powder {
+  background-image: url("../../images/icons/stack.svg#powder");
+}
 
-// .advantages__item--meal {}
+.advantages__item--meal {
+  background-image: url("../../images/icons/stack.svg#food");
+}
 
-// .advantages__item--time {}
+.advantages__item--time {
+  background-image: url("../../images/icons/stack.svg#clock");
+}

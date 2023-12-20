@@ -2,10 +2,25 @@
 
 // .social__item {}
 
-// .social__link {}
+.social__link {
+  display: inline-block;
 
-// .social__link--vkontakte {}
+  text-decoration: none;
 
-// .social__link--youtube {}
+  background-color: #666666;
 
-// .social__link--telegram {}
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+}
+
+.social__link--vkontakte {
+  mask-image: url("../../images/icons/stack.svg#vk");
+}
+
+.social__link--youtube {
+  mask-image: url("../../images/icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  mask-image: url("../../images/icons/stack.svg#telegram");
+}

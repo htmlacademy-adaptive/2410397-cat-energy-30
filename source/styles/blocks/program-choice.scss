@@ -2,7 +2,9 @@
 
 // .program-choice__container {}
 
-// .program-choice__title {}
+.program-choice__title {
+  line-height: 36px; //вынести в медиа-запрос только для мобильных
+}
 
 .program-choice__info {
   font-family: $secondary-font;

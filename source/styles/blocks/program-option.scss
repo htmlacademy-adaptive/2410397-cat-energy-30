@@ -1,6 +1,10 @@
-// .program-option {}
+.program-option {
+  background-repeat: no-repeat;
+}
 
 .program-option__title {
+  margin: 0;
+
   line-height: 37px;
   text-transform: uppercase;
 }
@@ -17,8 +21,17 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+
+  background-image: url("../../images/icons/stack.svg#arrow");
 }
 
-// .program-option--slim {}
+.program-option--slim {
+  background-image: url("../../images/icons/stack.svg#cat-slim");
+  background-size: 50px 53px;
 
-// .program-option--pro {}
+}
+
+.program-option--pro {
+  background-image: url("../../images/icons/stack.svg#cat-pro");
+  background-size: 67px 50px;
+}

@@ -33,9 +33,17 @@
 
 // .form__input-container {}
 
-// .form__input-container--email {}
+.form__input-container--email {
+  background-image: url("../../images/icons/stack.svg#email");
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
 
-// .form__input-container--tel {}
+.form__input-container--tel {
+  background-image: url("../../images/icons/stack.svg#phone");
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
 
 // .form__textarea {}
 
