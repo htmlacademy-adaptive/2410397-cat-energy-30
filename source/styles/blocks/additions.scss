@@ -26,15 +26,24 @@
 
 // .additions__button {}
 
+
 .additions__gift {
-  background-color: $bg-cats;
-  background-image: url("../../images/icons/stack.svg#gift");
+  background-image: linear-gradient(rgba($bg-cats, 85%), rgba($bg-cats, 85%)), image-set(url("../../images/gift-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-mobile@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
-  background-size: 78px 80px;
+  background-size: cover;
 }
 
 .additions__gift-info {
+  min-width: 280px;
+  min-height: 290px;
+  padding: 187px 40px 43px;
+
   font-size: 16px;
   line-height: 20px;
   color: $white;
+
+  background-image: url("../../images/icons/stack.svg#gift");
+  background-repeat: no-repeat;
+  background-position: top 59px center;
+  background-size: 78px 80px;
 }

@@ -4,10 +4,37 @@
 
 // }
 
-// .main-header__menu {}
+.main-header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__menu {
+    flex-direction: row;
+    height: 100px;
+  }
+
+  //не скрывается кнопка
+  .main-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__menu {
+    flex-direction: row;
+    height: 168px;
+  }
+}
 
 // .main-header__logo {}
 
 // .main-header__toggle {}
 
-// .main-header__navigation {}
+// .main-header__navigation {
+//   display: none;
+// }

@@ -2,6 +2,25 @@
 
 // .navigation__list {}
 
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 610px;
+  }
+}
+
 // .navigation__item {}
 
 .navigation__link {

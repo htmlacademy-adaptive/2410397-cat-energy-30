@@ -1,9 +1,12 @@
 .program-option {
+  position: relative;
+
   background-repeat: no-repeat;
 }
 
 .program-option__title {
   margin: 0;
+  padding-left: 70px;
 
   line-height: 37px;
   text-transform: uppercase;

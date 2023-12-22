@@ -1,7 +1,9 @@
 // .hero {}
 
 .hero__container {
-  background-color: $bg-cats;
+  background-image: linear-gradient(rgba($bg-cats, 85%), rgba($bg-cats, 85%)), image-set(url("../../images/main-cat-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/main-cat-mobile@2x.jpg") type("image/jpeg") 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__title {
