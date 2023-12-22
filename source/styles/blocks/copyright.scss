@@ -1,4 +1,6 @@
-// .copyright {}
+.copyright {
+  text-decoration: none;
+}
 
 .copyright__text {
   display: inline-block;
@@ -10,4 +12,10 @@
   text-decoration: none;
 }
 
-// .copyright__image {}
+.copyright__image {
+  // background-color: #666666;
+  mask-image: url("../../images/icons/stack.svg#html-academy-logo");
+  mask-position: center, contain;
+  mask-repeat: no-repeat;
+  mask-size: 27px 34px;
+}
