@@ -29,7 +29,7 @@
   transform: translateY(-50%);
 }
 
-.advantages__item:nt-child(2)::before {
+.advantages__item:nth-child(2)::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -46,7 +46,7 @@
   transform: translateY(-50%);
 }
 
-.advantages__item:nt-child(3)::before {
+.advantages__item:nth-child(3)::before {
   content: "";
   position: absolute;
   top: 50%;
