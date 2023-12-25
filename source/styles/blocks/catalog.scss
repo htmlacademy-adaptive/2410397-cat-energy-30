@@ -1,11 +1,18 @@
 // .catalog {}
 
+
 // .catalog__container {}
 
 .catalog__title {
+  margin-bottom: 41px;
+
   line-height: 36px; //вынести в медиа-запрос только для мобильных
 }
 
-// .catalog__list {}
+.catalog__list {
+  display: grid;
+
+  row-gap: 25px;
+}
 
 // .catalog__card {}

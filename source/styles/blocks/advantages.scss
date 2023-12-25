@@ -2,80 +2,73 @@
 
 // .advantages__container {}
 
-// .advantages__title {}
+.advantages__title {
+  margin-bottom: 40px;
 
-// .advantages__list {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  margin-bottom: 49px;
+
+  column-gap: 20px;
+
+  grid-template-columns: 60px, 200px;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, minmax(230px, auto));
+  }
+}
 
 .advantages__item {
-  position: relative;
+  display: grid;
+}
 
-  padding-left: 80px;
+.advantages__item::marker {
+  content: counter(advantage);
+}
+
+.advantages__item::before {
+  content: "";
+  // top: 50%;
+  // left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $bg-basic;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+
+  // @media (min-width: $tablet-width) {
+  //   grid-column: 1/-1;
+  // }
 }
 
 .advantages__item:first-child::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: $bg-basic;
   background-image: url("../../images/icons/stack.svg#leaf");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px 32px;
-  transform: translateY(-50%);
 }
 
 .advantages__item:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: $bg-basic;
   background-image: url("../../images/icons/stack.svg#powder");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px 32px;
-  transform: translateY(-50%);
 }
 
 .advantages__item:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: $bg-basic;
   background-image: url("../../images/icons/stack.svg#food");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px 32px;
-  transform: translateY(-50%);
 }
 
 .advantages__item:last-child::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: $bg-basic;
   background-image: url("../../images/icons/stack.svg#clock");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px 32px;
-  transform: translateY(-50%);
 }

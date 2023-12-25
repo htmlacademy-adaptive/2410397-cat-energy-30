@@ -2,8 +2,23 @@
 
 // .program__container {}
 
-// .program__list {}
+.program__list {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .program__item {
+  margin-bottom: 20px;
+  padding: 21px 20px 18px;
+
   background-color: $bg-extra;
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
+
 }

@@ -1,9 +1,20 @@
-// .social {}
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  // min-width: 132px;
+  padding: 20px;
+
+  gap: 24px;
+}
+
 
 // .social__item {}
 
 .social__link {
-  display: inline-block;
+  display: flex;
+  // padding: 10px;
 
   text-decoration: none;
 
