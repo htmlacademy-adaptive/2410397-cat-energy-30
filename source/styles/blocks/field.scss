@@ -1,4 +1,6 @@
 .field {
+  padding: 13px 15px;
+
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
@@ -6,6 +8,7 @@
   text-transform: uppercase;
 
   border: none;
+  border: 1px solid #e7e7e7;
 
   &::placeholder {
     // color: $base-color-text;

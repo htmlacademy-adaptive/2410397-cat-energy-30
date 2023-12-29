@@ -3,13 +3,30 @@
 // .program-choice__container {}
 
 .program-choice__title {
+  margin-bottom: 37px;
+
   line-height: 36px; //вынести в медиа-запрос только для мобильных
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .program-choice__info {
+  margin: var(--margin-reset);
+  margin-bottom: 39px;
+
   font-family: $secondary-font;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 66px;
+  }
 }
 
 // .program-choice__form {}

@@ -25,6 +25,14 @@
 
 // .contacts__adress-city {}
 
-// .contacts__map {}
+.contacts__map img {
+  display: block;
+}
+
+.contacts__iframe iframe {
+  display: block;
+
+  border: none;
+}
 
 // .contacts__map-link {}

@@ -13,6 +13,19 @@
   display: grid;
 
   row-gap: 25px;
-}
 
-// .catalog__card {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
+    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+    ;
+
+    gap: 80px 63px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

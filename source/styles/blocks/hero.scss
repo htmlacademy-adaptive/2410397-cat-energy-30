@@ -1,15 +1,30 @@
 // .hero {}
 
 .hero__container {
+  height: 302px;
+
   background-image: linear-gradient(rgba($bg-cats, 85%), rgba($bg-cats, 85%)), image-set(url("../../images/main-cat-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/main-cat-mobile@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(rgba($bg-cats, 85%), rgba($bg-cats, 85%)), image-set(url("../../images/main-cat-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/main-cat-mobile@2x.jpg") type("image/jpeg") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .hero__title {
-  line-height: 36px; //вынести в медиа-запрос только для мобильных
+  line-height: 36px;
   text-align: center;
-  color: $white;
+
+  // @media (min-width: 280px) {
+  //   color: $white;
+  // }
 }
 
 .hero__text {

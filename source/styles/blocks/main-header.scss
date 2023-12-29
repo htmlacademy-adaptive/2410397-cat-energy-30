@@ -1,40 +1,35 @@
-// .main-header {}
+.main-header {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
 
-// .main-header__container {
+// .main-header__container {}
 
+// .main-header__menu {
+//   display: grid;
+//   padding: 13px 0 14px 0;
+
+//   // @media (min-width: $tablet-width) {
+//   //   flex-direction: row;
+//   // }
 // }
 
 .main-header__menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 65px;
+  position: relative;
 }
 
-@media (min-width: $tablet-width) {
-  .main-header__menu {
-    flex-direction: row;
-    height: 100px;
-  }
 
-  //не скрывается кнопка
-  .main-header__toggle {
+.main-header__toggle {
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-header__menu {
-    flex-direction: row;
-    height: 168px;
-  }
+.main-header__navigation {
+
+
+  width: auto;
+
 }
-
-// .main-header__logo {}
-
-// .main-header__toggle {}
-
-// .main-header__navigation {
-//   display: none;
-// }

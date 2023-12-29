@@ -1,9 +1,8 @@
 .social {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
-  // min-width: 132px;
+  min-width: 132px;
   padding: 20px;
 
   gap: 24px;
@@ -14,6 +13,7 @@
 
 .social__link {
   display: flex;
+  padding: 10px;
   // padding: 10px;
 
   text-decoration: none;

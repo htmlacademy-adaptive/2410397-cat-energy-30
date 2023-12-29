@@ -1,30 +1,90 @@
-// .additions {}
+.additions {
+  --border-line: 1px solid #cdcdcd; //не подключается через root
+}
 
 .additions__heading {
+  margin-bottom: 36px;
+
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 36px;
+  }
 }
 
 // .additions__wrapper {}
 
-// .additions__list {}
+.additions__list {
+  margin-bottom: 35px;
+}
 
 .additions__item {
+  display: grid;
+  padding-top: 13px;
+  padding-bottom: 19px;
+
   line-height: 14px;
+
+  border-top: var(--border-line);
+
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 38px 28px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    grid-template-columns: 2.5fr 1fr 0.5fr;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1.5fr 1fr 0.5fr 1fr;
+  }
 }
 
 .additions__item-title {
+  margin: var(--margin-reset);
+  margin-bottom: 13px;
+
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
   color: $special-dark-grey;
   text-transform: uppercase;
+
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    grid-column: 1;
+  }
 }
 
-// .additions__item-text {}
+.additions__item-text {
+  margin: var(--margin-reset);
+  margin-bottom: 15px;
+  ;
+}
 
-// .additions__item-value {}
+.additions__item-value {
+  margin: var(--margin-reset);
 
-// .additions__button {}
+  justify-self: end;
+}
+
+.additions__button {
+  grid-column: 1/-1;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4;
+  }
+}
 
 
 .additions__gift {
@@ -36,6 +96,8 @@
 .additions__gift-info {
   min-width: 280px;
   min-height: 290px;
+  margin: var(--margin-reset);
+  margin-bottom: 75px;
   padding: 187px 40px 43px;
 
   font-size: 16px;

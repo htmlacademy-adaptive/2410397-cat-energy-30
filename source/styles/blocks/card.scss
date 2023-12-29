@@ -1,7 +1,16 @@
 .card {
   display: grid;
+  padding-top: 20px;
 
   grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 40px;
+
+    background: linear-gradient($white 15%, $bg-extra 15%);
+
+    grid-template-columns: 1fr;
+  }
 }
 
 .card__image {
@@ -10,10 +19,16 @@
   height: 100%;
   margin: 0;
 
-  object-fit: contain;
+  object-fit: cover;
 }
 
-// .card__content-wrapper {}
+.card__content-wrapper {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
 
 .card__link {
   display: inline-block;
@@ -31,9 +46,26 @@
   line-height: 20px;
   color: $special-dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 127px;
+    margin-bottom: 20px;
+
+    grid-row: 1/-1;
+  }
 }
 
-// .card__details {}
+.card__details {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    border-bottom: 1px solid #cdcdcd;
+
+    row-gap: 12px;
+  }
+}
 
 .card__details-item {
   display: grid;

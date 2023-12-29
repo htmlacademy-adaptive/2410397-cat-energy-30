@@ -2,7 +2,12 @@
 
 // .form__wrapper {}
 
-// .form__group {}
+.form__group {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
 
 // .form__group--cat {}
 
@@ -16,9 +21,21 @@
 
 // .form__group--submit
 
-// .form__list {}
+.form__list {
+  display: grid;
 
-// .form__item {}
+  row-gap: 14px;
+}
+
+.form__item {
+  display: grid;
+  align-items: center;
+  width: fit-content;
+
+  column-gap: 13px;
+
+  grid-template-columns: repeat(2, auto);
+}
 
 .form__label {
   font-family: $secondary-font;
