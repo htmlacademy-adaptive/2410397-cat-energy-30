@@ -13,7 +13,7 @@
 </head>
 
 <body class="body">
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <div class="main-header__container container">
       <div class="main-header__menu">
         <a class="main-header__logo logo" aria-current="page" href="index.html">
@@ -27,7 +27,7 @@
         <button class="main-header__toggle burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="main-header__navigation navigation">
+        <nav class="main-header__navigation main-header__navigation--opened main-header__navigation--closed main-header__navigation--nojs navigation">
           <ul class="navigation__list list-reset">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current" aria-current="page" href="index.html">Главная</a>
@@ -44,15 +44,15 @@
     </div>
     <section class="hero">
       <div class="hero__container container">
-        <h1 class="hero__title main-title">Функциональное питание для котов Cat Energy</h1>
+        <h1 class="hero__title main-title">Функциональное <br>питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
       </div>
-      <a class="hero__button button" href="#">Подобрать программу</a>
       <picture>
         <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-cans/can-desktop@1x.png 1x, images/hero-cans/can-desktop@2x.png 2x">
         <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-cans/can-tablet@1x.png 1x, images/hero-cans/can-tablet@2x.png 2x">
         <img class="hero__image" src="images/hero-cans/can-mobile@1x.png" width="280" height="270" srcset="images/hero-cans/can-mobile@2x.png 2x" alt="Банка с кормом Cat Energy Pro с курицей 500 грамм.">
       </picture>
+      <a class="hero__button button" href="#">Подобрать программу</a>
     </section>
   </header>
   <main class="main">

@@ -1,7 +1,52 @@
 .program-option {
   position: relative;
+  // display: grid;
+
+  // background-repeat: no-repeat;
+
+  // grid-template-columns: repeat(2, auto);
+}
+
+.program-option::before {
+  content: "";
+  position: absolute;
+
+  width: 67px;
+  height: 53px;
 
   background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width:$tablet-width) {
+    width: 268px;
+    height: 211px;
+  }
+}
+
+.program-option.program-option--slim::before {
+  top: 21px;
+  left: 10px;
+
+  background-image: url("../../images/icons/stack.svg#cat-slim");
+  background-size: 50px 53px;
+
+  @media (min-width:$tablet-width) {
+    top: 81pz;
+
+    background-size: 200px 211px;
+  }
+}
+
+.program-option.program-option--pro::before {
+  top: 21px;
+  left: 13px;
+
+  background-image: url("../../images/icons/stack.svg#cat-pro");
+  background-size: 67px 50px;
+
+  @media (min-width:$tablet-width) {
+    background-size: 268px 200px;
+  }
 }
 
 .program-option__title {
@@ -11,36 +56,51 @@
 
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
+
 
 .program-option__description {
   margin: 0;
-  margin-bottom: 19;
+  margin-bottom: 19px;
   padding-bottom: 23px;
 
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width:$tablet-width) {
+    width: 340px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
 }
 
 .program-option__link {
-  display: inline-block;
+  display: flex;
+  // margin-right: -15px;
 
-  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  font-family: $secondary-font;
   text-align: center;
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
 
   background-image: url("../../images/icons/stack.svg#arrow");
-}
+  background-repeat: no-repeat;
+  // background-position: center 15px left;
+  background-size: 32px 10px;
 
-.program-option--slim {
-  background-image: url("../../images/icons/stack.svg#cat-slim");
-  background-size: 50px 53px;
-}
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
 
-.program-option--pro {
-  background-image: url("../../images/icons/stack.svg#cat-pro");
-  background-size: 67px 50px;
+  }
 }
