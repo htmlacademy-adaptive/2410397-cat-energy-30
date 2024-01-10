@@ -19,11 +19,15 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
 
+    column-gap: 133px;
+
     grid-template-columns: repeat(2, 1fr);
     row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
+    column-gap: 73px;
+
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
   }
 }

@@ -4,19 +4,55 @@
   background-color: $bg-for-example;
 }
 
-// .example__title {}
+.example__title {
+  margin-bottom: 40px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
 
 // .example__content {}
 
 // .example__results-wrapper {}
 
-// .example__results {}
+.example__results {
+  display: grid;
+  width: 124px;
+  height: 56px;
+
+  text-align: center;
+  column-gap: 32px;
+
+  border: var(--border-line);
+  border-radius: 9px; //проверить по pp
+
+  grid-template-columns: repeat(2, 124px);
+
+  @media (min-width:$tablet-width) {
+    height: 77px;
+
+    column-gap: 43px;
+
+    grid-template-columns: repeat(2, 162px);
+  }
+}
+
 
 .example__cost {
-  font-family: $secondary-font;
   line-height: 20px;
+  font-family: $secondary-font;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+  }
 }
 
 // .example__cost--value {}
