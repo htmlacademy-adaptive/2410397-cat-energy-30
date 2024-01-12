@@ -1,8 +1,10 @@
-// .example {}
+.example {
+  padding: 25px 0 40px;
 
-.example__container {
   background-color: $bg-for-example;
 }
+
+// .example__container {}
 
 .example__title {
   margin-bottom: 40px;
@@ -22,31 +24,20 @@
 // .example__results-wrapper {}
 
 .example__results {
-  display: grid;
-  width: 124px;
-  height: 56px;
-
-  text-align: center;
-  column-gap: 32px;
+  margin-bottom: 20px;
 
   border: var(--border-line);
-  border-radius: 9px; //проверить по pp
-
-  grid-template-columns: repeat(2, 124px);
-
-  @media (min-width:$tablet-width) {
-    height: 77px;
-
-    column-gap: 43px;
-
-    grid-template-columns: repeat(2, 162px);
-  }
 }
 
 
 .example__cost {
-  line-height: 20px;
+  margin: var(--margin-reset);
+  margin-bottom: 20px;
+  padding-top: 20px;
+
   font-family: $secondary-font;
+  line-height: 20px;
+  text-align: center;
   color: $black;
   text-transform: uppercase;
 

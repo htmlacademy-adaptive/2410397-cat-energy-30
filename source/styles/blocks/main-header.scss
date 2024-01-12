@@ -3,9 +3,6 @@
 
   margin-bottom: 20px;
 
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
-
   @media (min-width: $desktop-width) {
     &--index::before {
       content: "";
@@ -34,8 +31,6 @@
   padding-top: 13px;
 
   border-bottom: var(--border-bottom);
-  outline: 5px solid blue;
-  outline-offset: -5px;
 
   @media (min-width:$tablet-width) {
     display: grid;
