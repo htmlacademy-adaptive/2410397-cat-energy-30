@@ -1,11 +1,15 @@
 .social {
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   min-width: 132px;
   padding: 20px;
 
-  gap: 24px;
+  border-top: var(--border-line);
+  border-bottom: var(--border-line);
+
+  --border-line: 1px solid #cdcdcd;
+
 }
 
 
@@ -13,13 +17,12 @@
 
 .social__link {
   display: flex;
-  padding: 10px;
-  // padding: 10px;
 
   text-decoration: none;
 
   background-color: #666666;
 
+  mask-position: center;
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
 }

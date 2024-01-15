@@ -19,7 +19,10 @@
 }
 
 
-// .example__content {}
+.example__content {
+  margin: var(--margin-reset);
+  margin-bottom: 20px;
+}
 
 // .example__results-wrapper {}
 

@@ -8,22 +8,47 @@
   background-color: $white;
 }
 
-// .contacts__wrapper {}
+.contacts__wrapper {
+  display: grid;
+  padding: 26px 0;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 61px 70px;
+
+    grid-template-columns: repeat(2, 163px);
+  }
+}
 
 .contacts__invitation {
+  margin: 0;
+
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: $almost-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
   line-height: 20px;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
 }
 
-// .contacts__adress-city {}
+.contacts__adress-city {
+  align-self: end;
+}
 
 .contacts__map img {
   display: block;

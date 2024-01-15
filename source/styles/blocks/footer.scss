@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    min-width: 708px
+    min-width: 708px;
   }
 }
 
@@ -14,12 +14,11 @@
   padding-bottom: 40px;
 
   background-color: $bg-extra;
+
 }
 
 .footer__logo {
-  // display: flex;
-  // justify-content: center;
-  display: inline-block;
+  justify-content: center;
   margin-bottom: 20px;
 }
 

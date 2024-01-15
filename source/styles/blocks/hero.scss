@@ -34,9 +34,9 @@
     background-image: unset;
   }
 
-  @media (min-width:$desktop-width) {
-    padding: 81px 1;
-  }
+  // @media (min-width:$desktop-width) {
+  //   padding: 81px 0;
+  // }
 }
 
 .hero__title {
@@ -44,6 +44,7 @@
 
   @media (max-width: $mobile-width-only) {
     line-height: 36px;
+    color: $white;
   }
 
   @media (min-width:$tablet-width) {

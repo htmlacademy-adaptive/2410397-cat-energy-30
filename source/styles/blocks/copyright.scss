@@ -7,8 +7,8 @@
 }
 
 .copyright__text {
-  display: inline-block;
-  margin-right: auto;
+  margin: auto;
+  margin-left: 0;
 
   font-family: $primary-font;
   font-size: 16px;
@@ -18,11 +18,9 @@
 }
 
 .copyright__image {
-  display: block;
-  // background-color: #666666;
+  background-color: #666666;
 
   mask-image: url("../../images/icons/stack.svg#html-academy-logo");
-  mask-position: center, contain;
   mask-repeat: no-repeat;
   mask-size: 27px 34px;
 }

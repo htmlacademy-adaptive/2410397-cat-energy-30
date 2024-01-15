@@ -8,20 +8,81 @@
   overflow: hidden;
 
   grid-template-columns: 50% 4px 1fr;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
-.slider__image {
-  display: flex;
-  // width: 140px;
+.slider__image img {
+  display: block;
+  width: 100%;
   height: 100%;
 
   object-fit: cover;
 }
 
-.slider__image--before {
-  justify-content: start;
+.slider__image--before img {
+  object-position: left;
 }
 
-.slider__image--after {
-  justify-content: end;
+.slider__image--after img {
+  object-position: right;
+}
+
+.slider__button {
+  z-index: 1;
+
+  width: 4px;
+  min-height: 100%;
+  padding: 0;
+
+  color: #666666;
+
+  background-color: currentColor;
+  border: none;
+  border-radius: 2px;
+  cursor: e-resize;
+
+  &:hover,
+  &:focus {
+    color: $bg-basic;
+  }
+
+  &:active {
+    color: $bg-state;
+
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 51%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+
+    color: currentColor;
+
+    background-color: #ffffff;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    transform: translate(-50%, -51%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    mask-image: url("../../images/icons/stack.svg#slider-arrows");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 24px 18px;
+  }
 }
