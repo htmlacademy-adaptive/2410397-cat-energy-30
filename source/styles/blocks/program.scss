@@ -3,22 +3,32 @@
 // .program__container {}
 
 .program__list {
+  display: grid;
   margin-bottom: 20px;
+
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 71px;
   }
 }
 
 .program__item {
-  margin-bottom: 20px;
   padding: 30px 20px 18px;
 
   background-color: $bg-extra;
 
   @media (min-width: $tablet-width) {
     padding: 77px 53px 57px;
+
+    row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {

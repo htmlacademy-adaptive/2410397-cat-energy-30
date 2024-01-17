@@ -24,15 +24,16 @@
 
 .main-header__container {
   margin-bottom: 20px;
-}
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
 
 .main-header__menu {
   position: relative;
 
   padding-top: 13px;
-
-  border-bottom: var(--border-bottom);
 
   @media (min-width:$tablet-width) {
     display: grid;

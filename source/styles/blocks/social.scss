@@ -3,20 +3,31 @@
   flex-wrap: wrap;
   justify-content: center;
   min-width: 132px;
-  padding: 20px;
 
   border-top: var(--border-line);
   border-bottom: var(--border-line);
 
   --border-line: 1px solid #cdcdcd;
+  gap: 4px;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 
-// .social__item {}
+.social__item {
+  padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px;
+  }
+}
 
 .social__link {
   display: flex;
+  width: 28px;
+  height: 22px;
 
   text-decoration: none;
 
@@ -24,7 +35,6 @@
 
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-size: 28px 22px;
 }
 
 .social__link--vkontakte {

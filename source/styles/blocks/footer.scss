@@ -1,25 +1,35 @@
 .footer {
-  min-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    min-width: 708px;
-  }
-}
-
-.footer__container {
-  margin: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 
   background-color: $bg-extra;
 
+  @media (min-width: $tablet-width) {
+    padding: 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 0;
+
+  }
+}
+
+
+.footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer__logo {
   justify-content: center;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 // .footer__social {}

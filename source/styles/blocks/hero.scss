@@ -1,10 +1,15 @@
 .hero {
+  margin-bottom: 20px;
+
   font-family: $secondary-font;
   text-align: center;
   color: $white;
 
   @media (min-width:$tablet-width) {
     display: grid;
+    margin-bottom: 0;
+    padding-right: 30px;
+    padding-left: 30px;
 
     text-align: left;
     color: $black;
@@ -12,7 +17,9 @@
 
   @media (min-width: $desktop-width) {
     align-items: start;
-    padding-top: 29px;
+    margin-bottom: 82px;
+    margin-left: 90px;
+    padding-top: 32px;
     padding-bottom: 52px;
 
     grid-template-columns: auto 1fr;
@@ -29,14 +36,14 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 90px 0;
+    padding: 81px 80px 0;
 
     background-image: unset;
   }
 
-  // @media (min-width:$desktop-width) {
-  //   padding: 81px 0;
-  // }
+  @media (min-width:$desktop-width) {
+    padding: 81px 62px 0;
+  }
 }
 
 .hero__title {
@@ -98,13 +105,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    // order: unset;
+    order: unset;
     width: 552px;
     height: 499px;
+    margin: 0 0 0 -100px;
 
     grid-column: -2 / -1;
     grid-row: 1 / 4;
-    // margin: 0 0 0 -100px;
   }
 }
 

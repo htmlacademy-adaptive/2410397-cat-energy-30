@@ -4,6 +4,10 @@
 
   text-decoration: none;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
 }
 
 .copyright__text {
@@ -23,4 +27,8 @@
   mask-image: url("../../images/icons/stack.svg#html-academy-logo");
   mask-repeat: no-repeat;
   mask-size: 27px 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
 }

@@ -14,18 +14,20 @@
   display: grid;
   margin-bottom: 49px;
 
+  counter-reset: section;
+
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    margin-bottom: 47px;
 
-    column-gap: 133px;
-
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 37px;
+    gap: 37px 50px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+
     column-gap: 73px;
 
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
@@ -33,48 +35,82 @@
 }
 
 .advantages__item {
+  position: relative;
+
   display: grid;
 
   column-gap: 20px;
 
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 60px 1fr;
+
 
   @media (min-width: $tablet-width) {
-    row-gap: 31px;
+    min-height: 280px;
+    padding-top: 40px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+  }
+
+  &::before {
+    content: "";
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $bg-basic;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 29px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(section) "";
+      position: absolute;
+      top: 0;
+      left: 35%;
+      z-index: -1;
+
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      color: $bg-extra;
+
+      counter-increment: section;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 45%;
+    }
+  }
+
+  &:first-child::before {
+    background-image: url("../../images/icons/stack.svg#leaf");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../../images/icons/stack.svg#powder");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../../images/icons/stack.svg#food");
+  }
+
+  &:last-child::before {
+    background-image: url("../../images/icons/stack.svg#clock");
   }
 }
 
-.advantages__item::before {
-  content: "";
-
-  width: 60px;
-  height: 60px;
-
-  background-color: $bg-basic;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px 32px;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-
-    grid-column: 1/-1;
+.advantages__item br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
-}
-
-.advantages__item:first-child::before {
-  background-image: url("../../images/icons/stack.svg#leaf");
-}
-
-.advantages__item:nth-child(2)::before {
-  background-image: url("../../images/icons/stack.svg#powder");
-}
-
-.advantages__item:nth-child(3)::before {
-  background-image: url("../../images/icons/stack.svg#food");
-}
-
-.advantages__item:last-child::before {
-  background-image: url("../../images/icons/stack.svg#clock");
 }

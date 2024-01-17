@@ -86,4 +86,10 @@
     background-color: #e6e6e6;
     box-shadow: 100vw 0 0 #e6e6e6;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
 }
