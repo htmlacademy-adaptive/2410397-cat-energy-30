@@ -3,12 +3,43 @@
 
   background-color: $bg-for-example;
 
+  @media (min-width:$tablet-width) {
+    padding: 45px 0 101px;
+
+    background-image: linear-gradient($white 638px, $bg-for-example 462px);
+  }
+
   @media (min-width:$desktop-width) {
-    padding: 20px 0 75px;
+    display: grid;
+    justify-content: space-between;
+    padding: 0 0 75px;
+
+    grid-template-columns: 436px 560px;
+
   }
 }
 
-// .example__container {}
+.example__container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    right: 0;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: #e6e6e6;
+    box-shadow: 100vw 0 0 #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
 
 .example__title {
   margin-bottom: 40px;
@@ -37,7 +68,21 @@
 
 }
 
-// .example__results-wrapper {}
+.example__results-wrapper {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
 
 .example__results {
   margin-bottom: 20px;
@@ -48,7 +93,6 @@
 
 .example__cost {
   margin: var(--margin-reset);
-  margin-bottom: 20px;
   padding-top: 20px;
 
   font-family: $secondary-font;
@@ -58,10 +102,16 @@
   text-transform: uppercase;
 
   @media (min-width:$tablet-width) {
+    width: 174px;
+    padding-top: 11px;
+
     font-size: 20px;
+    text-align: right;
   }
 }
 
-// .example__cost--value {}
+.example__cost--value {
+  margin-top: 9px;
+}
 
 // .example__slider {}

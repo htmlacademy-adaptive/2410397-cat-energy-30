@@ -77,10 +77,9 @@
     line-height: 36px;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width:$desktop-width) {
     padding-left: 162px;
   }
-
 }
 
 .program-option__description {
@@ -96,7 +95,7 @@
     border: none;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width:$desktop-width) {
     width: 457px;
 
   }
