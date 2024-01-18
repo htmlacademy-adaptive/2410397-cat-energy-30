@@ -6,40 +6,27 @@
   @media (min-width:$tablet-width) {
     padding: 45px 0 101px;
 
-    background-image: linear-gradient($white 638px, $bg-for-example 462px);
+    background-image: linear-gradient($white 58%, $bg-for-example 58%);
+    border-top: var(--border-line);
   }
 
   @media (min-width:$desktop-width) {
     display: grid;
     justify-content: space-between;
-    padding: 0 0 75px;
+    padding: 0 20px 75px;
 
-    grid-template-columns: 436px 560px;
+    background-image: linear-gradient($white 23%, $bg-for-example 23%);
+    border: none;
 
+    grid-template-columns: 1fr 560px;
   }
 }
 
 .example__container {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -45px;
-    right: 0;
-
-    width: 100vw;
-    height: 1px;
-
-    background-color: #e6e6e6;
-    box-shadow: 100vw 0 0 #e6e6e6;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width:$desktop-width) {
+    padding: 0 90px;
   }
 }
-
 
 .example__title {
   margin-bottom: 40px;
@@ -53,7 +40,6 @@
   }
 }
 
-
 .example__content {
   margin: var(--margin-reset);
   margin-bottom: 20px;
@@ -64,8 +50,8 @@
 
   @media (min-width:$desktop-width) {
     margin-bottom: 69px;
+    padding-right: 96px;
   }
-
 }
 
 .example__results-wrapper {
@@ -86,14 +72,10 @@
 
 .example__results {
   margin-bottom: 20px;
-
-  border: var(--border-line);
 }
-
 
 .example__cost {
   margin: var(--margin-reset);
-  padding-top: 20px;
 
   font-family: $secondary-font;
   line-height: 20px;
@@ -102,16 +84,27 @@
   text-transform: uppercase;
 
   @media (min-width:$tablet-width) {
-    width: 174px;
     padding-top: 11px;
 
     font-size: 20px;
     text-align: right;
   }
+
+  @media (min-width:$desktop-width) {
+    text-align: left;
+  }
 }
 
 .example__cost--value {
-  margin-top: 9px;
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-left: 62px;
+  }
 }
 
 // .example__slider {}

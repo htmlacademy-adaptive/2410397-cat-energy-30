@@ -73,3 +73,9 @@
     display: none;
   }
 }
+
+.main-header__navigation--index {
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}

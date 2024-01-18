@@ -50,12 +50,24 @@
   align-self: end;
 }
 
+.contacts__map {
+  width: 100%;
+  height: 400px;
+}
+
 .contacts__map img {
   display: block;
 }
 
+.contacts__iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .contacts__iframe iframe {
   display: block;
+  width: 100%;
+  height: 100%;
 
   border: none;
 }
