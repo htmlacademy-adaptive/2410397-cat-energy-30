@@ -23,9 +23,38 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 76px;
-    ;
 
     gap: 80px 63px;
     grid-template-columns: repeat(4, 1fr);
+    ;
+  }
+}
+
+.catalog__card {
+  padding-top: 81px;
+}
+
+.catalog__card-container {
+  display: grid;
+  align-items: start;
+  // padding-top: 20px;
+  padding: 20px 20px 25px;
+
+  gap: 22px 0;
+  grid-template-columns: 140px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    // padding: 0 38px 40px;
+    padding: 40px 38px;
+
+    background-color: $bg-extra;
+
+    gap: 22px 0;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 11px 0;
   }
 }
