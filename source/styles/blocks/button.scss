@@ -13,6 +13,15 @@
   background-color: $bg-basic;
   border: none;
 
+  &:hover,
+  &:focus {
+    background-color: $bg-state;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
   &--secondary {
     color: $base-color-text;
 

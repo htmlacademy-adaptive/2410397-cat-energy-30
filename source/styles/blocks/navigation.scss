@@ -2,6 +2,13 @@
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
+  color: $black;
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
 }
 
 .navigation__list {
@@ -42,7 +49,7 @@
 .navigation__link {
   position: relative;
 
-  color: $black;
+  color: inherit;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -63,7 +70,7 @@
 
       text-decoration-color: $bg-basic;
       text-decoration-thickness: 2px;
-      text-underline-offset: 13px;
+      text-underline-offset: 10px;
     }
 
     @media (min-width: $desktop-width) {

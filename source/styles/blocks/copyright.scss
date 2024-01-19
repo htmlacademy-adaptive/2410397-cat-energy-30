@@ -19,6 +19,10 @@
   line-height: 20px;
   color: $base-color-text;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__image {
@@ -30,5 +34,14 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bg-basic;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

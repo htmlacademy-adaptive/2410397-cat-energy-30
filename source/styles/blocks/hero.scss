@@ -17,9 +17,7 @@
 
   @media (min-width: $desktop-width) {
     align-items: start;
-    margin-bottom: 82px;
-    margin-left: 90px;
-    padding-top: 29px;
+    margin: 0 0 82px 90px;
     padding-bottom: 52px;
 
     grid-template-columns: auto 1fr;
@@ -36,7 +34,7 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    padding: 81px 80px 0;
+    padding: 65px 90px 0;
 
     background-image: unset;
   }
@@ -73,7 +71,6 @@
   }
 }
 
-
 .hero__button {
   width: 280px;
 
@@ -86,6 +83,10 @@
     line-height: 26px;
 
     grid-row: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 62px;
   }
 }
 
