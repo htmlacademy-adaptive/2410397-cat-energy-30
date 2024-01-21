@@ -19,6 +19,8 @@
 }
 
 .logo__image {
+  display: block;
+
   &--icon {
     width: 33px;
     height: 38px;
@@ -36,5 +38,11 @@
       height: 59px;
       margin-right: 14px;
     }
+  }
+}
+
+.main-header__logo .logo__image--text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
   }
 }
