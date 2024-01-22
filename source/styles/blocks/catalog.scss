@@ -30,6 +30,23 @@
   }
 }
 
-// .catalog__card {
-//   padding-top: 81px;
-// }
+.catalog__card {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: #ebebeb;
+    box-shadow: 100vw 0 0 #ebebeb;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .navigation {
-  font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
+  font-family: $secondary-font;
   color: $black;
 
   &--index {
@@ -64,6 +64,23 @@
     opacity: 0.3;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 42px;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: #e6e6e6;
+    box-shadow: 100vw 0 0 #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   &--current {
     @media (min-width: $tablet-width) {
       text-decoration: underline;
@@ -77,22 +94,5 @@
       text-decoration-color: $white;
       text-underline-offset: 8px;
     }
-  }
-}
-
-.navigation__link::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 42px;
-
-  width: 100vw;
-  height: 1px;
-
-  background-color: #e6e6e6;
-  box-shadow: 100vw 0 0 #e6e6e6;
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

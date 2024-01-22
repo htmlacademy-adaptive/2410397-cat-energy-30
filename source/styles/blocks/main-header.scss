@@ -22,7 +22,11 @@
   }
 }
 
-// .main-header__container {}
+.main-header__container {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
 
 .main-header__menu {
   position: relative;
