@@ -1,21 +1,42 @@
-.additions {
-  --border-line: 1px solid #cdcdcd; //не подключается через root
-}
+// .additions {}
 
 .additions__heading {
-  margin-bottom: 36px;
+  padding: 25px 0 36px;
 
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    padding: 70px 40px 80px;
+
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 0 80px;
   }
 }
 
-// .additions__wrapper {}
+.additions__wrapper {
+  @media (min-width:$desktop-width) {
+    display: grid;
+    justify-content: space-between;
+    margin-bottom: 87px;
+
+    grid-template-columns: 894px 245px;
+  }
+
+}
 
 .additions__list {
   margin-bottom: 35px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin: var(--margin-reset);
+  }
 }
 
 .additions__item {
@@ -35,13 +56,19 @@
     font-size: 16px;
     line-height: 20px;
 
-    grid-template-columns: 2.5fr 1fr 0.5fr;
+    border-right: var(--border-line);
+    border-left: var(--border-line);
 
+    grid-template-columns: 2.5fr 1fr 0.5fr;
   }
 
   @media (min-width: $desktop-width) {
+    align-items: center;
+    padding: 15px 0 17px;
+
     grid-template-columns: 1.5fr 1fr 0.5fr 1fr;
   }
+
 }
 
 .additions__item-title {
@@ -51,6 +78,7 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   color: $special-dark-grey;
   text-transform: uppercase;
 
@@ -64,18 +92,39 @@
 
     grid-column: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+
 }
 
 .additions__item-text {
   margin: var(--margin-reset);
   margin-bottom: 15px;
-  ;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+    margin-bottom: var(--margin-reset);
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: var(--margin-reset);
+
+    text-align: left;
+  }
 }
 
 .additions__item-value {
   margin: var(--margin-reset);
 
-  justify-self: end;
+  text-align: right;
+
+  @media (min-width:$desktop-width) {
+    text-align: left;
+  }
 }
 
 .additions__button {
@@ -88,14 +137,25 @@
 
 
 .additions__gift {
+  min-width: 280px;
+  height: 290px;
+
   background-image: linear-gradient(rgba($bg-cats, 85%), rgba($bg-cats, 85%)), image-set(url("../../images/gift-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-mobile@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-width: 707px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    height: 288px;
+  }
 }
 
 .additions__gift-info {
-  min-width: 280px;
-  min-height: 290px;
   margin: var(--margin-reset);
   margin-bottom: 35px;
   padding: 187px 40px 43px;
@@ -108,4 +168,10 @@
   background-repeat: no-repeat;
   background-position: top 59px center;
   background-size: 78px 80px;
+
+  @media (min-width:$desktop-width) {
+    margin: var(--margin-reset);
+
+    text-align: center;
+  }
 }

@@ -27,4 +27,13 @@
 
     background-color: $bg-extra;
   }
+
+  &--secondary:hover,
+  &--seconadary:focus {
+    background-color: $catalog-color;
+  }
+
+  &--secondary:active {
+    color: $base-color-text;
+  }
 }

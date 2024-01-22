@@ -1,12 +1,22 @@
 .card {
-  display: grid;
-  // align-items: start;
-  padding-top: 20px;
+  padding: 20px 20px 25px;
 
-  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $catalog-color;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 0 38px 40px;
+    padding: 81px 0 0;
+  }
+}
+
+.card__container {
+  display: grid;
+
+  grid-template-columns: 140px 1fr;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 40px;
 
     background-color: $bg-extra;
 
@@ -15,10 +25,36 @@
 }
 
 .card--more {
+  padding-top: 78px;
+
+  text-align: center;
+
+  background-image: url("../../images/icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-position: center 25px;
+  background-size: 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 60px 60px;
+  }
+}
+
+.card--more .card__container {
   @media (min-width: $tablet-width) {
     background: none;
     border: 2px solid $bg-extra;
   }
+}
+
+.card--more .card__heading {
+  grid-column: 1/-1;
+}
+
+.card--more .card__details-text {
+  margin: 0;
+  margin-bottom: 21px;
+
+  grid-column: 1/-1;
 }
 
 .card__image {
@@ -50,27 +86,45 @@
 
 .card__link {
   display: block;
-  max-width: 160px;
-  margin: 0 auto;
+  max-width: 99px;
 
-  text-align: center;
   text-decoration: none;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    max-width: 159px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__heading {
   margin: 0;
   margin-bottom: 14px;
 
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  font-family: $secondary-font;
+  font-weight: 400;
   color: $special-dark-grey;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
 
-    grid-row: 1/-1;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -79,8 +133,6 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-
-    border-bottom: var(--border-line);
 
     row-gap: 12px;
   }
@@ -94,6 +146,13 @@
   line-height: 16px;
 
   grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    border-bottom: var(--border-line);
+  }
 }
 
 .card__details-value {
@@ -105,6 +164,3 @@
 .card__button {
   grid-column: 1/-1;
 }
-
-
-// .card__text {}
