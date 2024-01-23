@@ -9,11 +9,13 @@
 }
 
 .catalog__title {
-  padding: 27px 20px 41px;
+  margin-bottom: 41px;
+  padding: 27px 20px 0;
 
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
     padding-top: 65px;
   }
 

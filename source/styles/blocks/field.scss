@@ -1,4 +1,5 @@
 .field {
+  width: 100%;
   padding: 13px 15px;
 
   font-family: $secondary-font;
@@ -7,11 +8,33 @@
   color: $base-color-text;
   text-transform: uppercase;
 
-  border: none;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $input-border-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::placeholder {
-    // color: $base-color-text;
-    opacity: 0.5;
+    color: $base-color-text;
+  }
+
+  &:hover {
+    border: var(--border-line);
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid $base-color-text;
+    outline: none;
+  }
+
+  &--error,
+  &--error:hover,
+  &--error:focus {
+    border: 2px solid #ff8282;
+    outline: none;
   }
 }

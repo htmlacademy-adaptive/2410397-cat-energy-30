@@ -13,18 +13,50 @@
 
 // .form__group--radio {}
 
-// .form__group--owner {}
+.form__group--owner .form__legend {
+  margin-bottom: 35px;
 
-// .form__group--comment {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
 
-// .form__group--checkbox {}
+.form__group--comment .form__legend {
+  margin-bottom: 38px;
 
-// .form__group--submit
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 78px;
+  }
+}
+
+.form__group--checkbox .form__legend {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.form__group--submit {
+  display: grid;
+
+  row-gap: 21px;
+
+}
 
 .form__list {
   display: grid;
+  margin-bottom: 24px;
 
   row-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 20px;
+  }
 }
 
 .form__item {
@@ -46,7 +78,38 @@
 
 // .form__input {}
 
-// .form__legend {}
+.form__legend {
+  position: relative;
+
+  width: fit-content;
+
+  background-color: $white;
+  box-shadow: -20px 0 0 0 $white, 20px 0 0 0 $white;
+
+  @media (min-height:$tablet-width) {
+    box-shadow: -40px 0 0 0 $white, 40px 0 0 0 $white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 2px;
+
+    background-color: $bg-basic;
+    box-shadow: 100vw 0 0 $bg-basic;
+  }
+}
+
+.form__legend br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
 // .form__input-container {}
 
@@ -62,13 +125,32 @@
   background-size: 20px;
 }
 
-// .form__textarea {}
+.form__textarea {
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 175px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}
 
 .form__button {
   border: none;
 }
 
 .form__note {
+  margin: 0;
+
   line-height: 16px;
+  text-align: center;
   color: #000000;
 }

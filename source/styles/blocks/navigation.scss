@@ -4,6 +4,16 @@
   line-height: 20px;
   color: $black;
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+
   &--index {
     @media (min-width: $desktop-width) {
       color: $white;
