@@ -1,10 +1,5 @@
 .program-option {
   position: relative;
-  // display: grid;
-
-  // background-repeat: no-repeat;
-
-  // grid-template-columns: repeat(2, auto);
 }
 
 .program-option::before {
@@ -19,7 +14,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 81px;
     left: 59%;
 
@@ -27,7 +22,7 @@
     height: 211px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     top: 41px;
     left: 33px;
 
@@ -40,11 +35,11 @@
   background-image: url("../../images/icons/stack.svg#cat-slim");
   background-size: 50px 53px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     background-size: 200px 211px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     background-size: 100px 97px;
   }
 }
@@ -53,11 +48,11 @@
   background-image: url("../../images/icons/stack.svg#cat-pro");
   background-size: 67px 50px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     background-size: 268px 200px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     background-size: 134px 100px;
   }
 }
@@ -70,13 +65,13 @@
   line-height: 37px;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
 
     line-height: 36px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 162px;
   }
 }
@@ -88,20 +83,20 @@
 
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 340px;
 
     border: none;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 457px;
-
   }
 }
 
 .program-option__link {
   display: flex;
+  width: 170px;
 
   font-family: $secondary-font;
   font-size: 16px;
@@ -111,7 +106,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }

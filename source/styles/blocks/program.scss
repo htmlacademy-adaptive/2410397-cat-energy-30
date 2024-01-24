@@ -1,7 +1,3 @@
-// .program {}
-
-// .program__container {}
-
 .program__list {
   display: grid;
   margin-bottom: 20px;
@@ -34,5 +30,4 @@
   @media (min-width: $desktop-width) {
     min-width: 570px;
   }
-
 }

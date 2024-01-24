@@ -5,7 +5,7 @@
   text-align: center;
   color: $white;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     margin-bottom: 0;
     padding: 0 30px 0;
@@ -39,7 +39,7 @@
     background-image: unset;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 81px 62px 0;
   }
 }
@@ -52,7 +52,7 @@
     color: $white;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
 }
@@ -115,8 +115,6 @@
     grid-row: 1 / 4;
   }
 }
-
-
 
 .hero__image img {
   display: block;

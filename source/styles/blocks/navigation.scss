@@ -28,7 +28,6 @@
 }
 
 .navigation__list {
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -50,14 +49,14 @@
 
   border-top: var(--border-line);
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
     padding: 14px 0 12px;
 
     border: none;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 16px 0 13px;
   }
 }

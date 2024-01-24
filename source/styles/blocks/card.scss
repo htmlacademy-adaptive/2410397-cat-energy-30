@@ -1,9 +1,5 @@
 .card {
-  padding: 20px 20px 25px;
-
-  @media (max-width: $mobile-width-only) {
-    border-bottom: 1px solid $catalog-color;
-  }
+  padding: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
     padding: 81px 0 0;
@@ -65,7 +61,7 @@
 
   object-fit: cover;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: -111px auto 0;
   }
 }

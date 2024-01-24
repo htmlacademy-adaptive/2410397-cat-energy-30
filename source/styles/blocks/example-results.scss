@@ -6,7 +6,7 @@
 
   grid-template-columns: repeat(2, 124px);
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     height: 77px;
 
     column-gap: 43px;
@@ -49,7 +49,7 @@
   background-color: $bg-for-example;
 
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: fit-content;
     padding: 0 9px;
 
@@ -59,7 +59,7 @@
     background-color: $white;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     background-color: $bg-for-example;
   }
 }

@@ -33,7 +33,7 @@
 
   padding-top: 13px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     align-items: start;
     padding-top: 25px;
@@ -42,10 +42,10 @@
     justify-items: end;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 55px;
 
-    grid-template-columns: 174px 1fr;
+    grid-template-columns: 202px 1fr;
     justify-items: end;
   }
 }
@@ -100,7 +100,7 @@
   height: 24px;
 
   background-color: $white;
-  background-image: url(../../images/icons/stack.svg#close-button);
+  background-image: url("../../images/icons/stack.svg#close-button");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 18px;

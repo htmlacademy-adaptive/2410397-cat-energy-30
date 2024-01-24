@@ -7,8 +7,13 @@
 .control--radio {
   position: relative;
 
-  margin-bottom: 26px;
   padding: 22px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+
+    border: 1px solid $input-border-color;
+  }
 
   &::before {
     content: "";
@@ -21,6 +26,10 @@
 
     background-color: $border-color;
     box-shadow: 100vw 0 0 $border-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &::after {
@@ -34,25 +43,21 @@
 
     background-color: $border-color;
     box-shadow: 100vw 0 0 $border-color;
-  }
 
-  @media (min-width: $tablet-width) {
-    display: none;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
-
 .control--checkbox {
-  margin-bottom: 34px;
-
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
-
-    row-gap: 32px;
+    gap: 32px 60px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -72,30 +77,21 @@
   margin: 0;
 
   background-color: $white;
-  border: none;
   border: var(--border-line);
 
   appearance: none;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-// .control__input[type="checkbox"]:checked {
-//   background-image: url("../images/icons/stack.svg#tick-checkbox");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: 26px 26px;
-// }
-
-.control__input[type="checkbox"]:checked::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 26px;
-  height: 26px;
-
+.control__input[type="checkbox"]:checked {
   background-image: url("../images/icons/stack.svg#tick-checkbox");
-  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 26px;
 }
 
 .control__input[type="radio"] {
@@ -121,10 +117,9 @@
 // .control__input--checkbox {}
 
 .control__label {
-  // display: grid;
-  // align-items: center;
-  // width: fit-content;
   padding-left: 15px;
 
-  // grid-template-columns: repeat (2, auto);
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }

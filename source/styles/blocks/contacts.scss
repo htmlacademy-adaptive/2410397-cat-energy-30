@@ -2,8 +2,6 @@
   background-color: $bg-extra;
 }
 
-// .contacts__container {}
-
 .contacts__container--index {
   background-color: $white;
 }
@@ -29,7 +27,7 @@
     margin-top: 91px;
     padding: 61px 80px;
 
-    background-color: inherit;
+    background-color: $white;
   }
 }
 
@@ -56,7 +54,7 @@
     text-align: end;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     text-align: start;
   }
 }
@@ -77,6 +75,7 @@
 
 .contacts__map img {
   display: block;
+  width: 100%;
 }
 
 .contacts__iframe {
@@ -91,5 +90,3 @@
 
   border: none;
 }
-
-// .contacts__map-link {}

@@ -1,17 +1,51 @@
-// .form {}
+.form {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
 
-// .form__wrapper {}
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    column-gap: 80px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .form__group {
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    padding: 0 40px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    padding: 0;
+  }
 }
 
-// .form__group--cat {}
+.form__group--cat {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+  }
 
-// .form__group--radio {}
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
 
 .form__group--owner .form__legend {
   margin-bottom: 35px;
@@ -33,6 +67,14 @@
   }
 }
 
+.form__group--checkbox {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
 .form__group--checkbox .form__legend {
   margin-bottom: 34px;
 
@@ -43,19 +85,32 @@
 
 .form__group--submit {
   display: grid;
+  margin: 0;
 
   row-gap: 21px;
 
+  @media (min-width: $tablet-width) {
+    column-gap: 60px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+  }
 }
 
 .form__list {
   display: grid;
-  margin-bottom: 24px;
 
   row-gap: 14px;
 
   @media (min-width: $tablet-width) {
     row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -70,40 +125,13 @@
 }
 
 .form__label {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
 }
 
 // .form__input {}
 
-.form__legend {
-  position: relative;
+// .form__legend {}
 
-  width: fit-content;
-
-  background-color: $white;
-  box-shadow: -20px 0 0 0 $white, 20px 0 0 0 $white;
-
-  @media (min-height:$tablet-width) {
-    box-shadow: -40px 0 0 0 $white, 40px 0 0 0 $white;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 17px;
-    right: 0;
-    z-index: -1;
-
-    width: 100vw;
-    height: 2px;
-
-    background-color: $bg-basic;
-    box-shadow: 100vw 0 0 $bg-basic;
-  }
-}
 
 .form__legend br {
   @media (min-width: $tablet-width) {
@@ -111,35 +139,67 @@
   }
 }
 
-// .form__input-container {}
+.form__input-container {
+  position: relative;
 
-.form__input-container--email {
-  background-image: url("../../images/icons/stack.svg#email");
-  background-repeat: no-repeat;
-  background-size: 20px;
-}
+  display: flex;
+  flex-grow: 1;
 
-.form__input-container--tel {
-  background-image: url("../../images/icons/stack.svg#phone");
-  background-repeat: no-repeat;
-  background-size: 20px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: $special-dark-grey;
+    transform: translate(0, -50%);
+
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 20px;
+  }
+
+  &--email {
+    &::after {
+      mask-image: url("../../images/icons/stack.svg#email");
+    }
+  }
+
+  &--tel {
+    &::after {
+      mask-image: url("../../images/icons/stack.svg#phone");
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-color: $special-dark-grey;
+    }
+  }
+
+  &:focus {
+    &::after {
+      border-color: $bg-basic;
+    }
+  }
+
+  &:has(.field--error) {
+    &::after {
+      border-color: $input-error;
+    }
+  }
 }
 
 .form__textarea {
+  display: block;
   width: 100%;
   min-height: 150px;
-  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     min-height: 175px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
   }
 }
 
@@ -150,7 +210,14 @@
 .form__note {
   margin: 0;
 
+  font-size: 14px;
   line-height: 16px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+
+    justify-self: start;
+  }
 }
