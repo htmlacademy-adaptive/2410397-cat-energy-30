@@ -109,9 +109,9 @@
     row-gap: 20px;
   }
 
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  // @media (min-width: $desktop-width) {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
 }
 
 .form__item {

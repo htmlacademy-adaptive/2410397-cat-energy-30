@@ -69,49 +69,17 @@
   z-index: 2;
 
   display: none;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-
-    display: block;
-  }
 }
 
 .main-header__menu.is-open .main-header__navigation {
   display: block;
 }
 
-.main-header__menu--no-js .main-header__navigation {
+.no-js .main-header__navigation {
   @media (max-width: $mobile-width-only) {
-    position: static;
+    position: absolute;
 
     display: none;
     margin: 0 -20px;
   }
-}
-
-.main-header__toggle {
-  content: "";
-  position: absolute;
-  top: 23px;
-  right: 0;
-
-  width: 24px;
-  height: 24px;
-
-  background-color: $white;
-  background-image: url("../../images/icons/stack.svg#close-button");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 18px 18px;
-  border: none;
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-header__menu--no-js .main-header__toggle {
-  display: none;
 }
