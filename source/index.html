@@ -22,7 +22,7 @@
             <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logos/logo-tablet.svg">
             <img class="logo__image logo__image--icon" src="images/logos/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy - котик-супергерой.">
           </picture>
-          <img class="logo__image logo__image--text" src="images/logos/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat Energy.">
+          <img class="logo__image logo__image--text" src="images/logos/header-logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat Energy.">
         </a>
         <button class="main-header__toggle burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -44,15 +44,19 @@
     </div>
     <section class="hero">
       <div class="hero__container container">
-        <h1 class="hero__title main-title">Функциональное <br>питание для котов</h1>
-        <p class="hero__text">Занялся собой? Займись котом!</p>
+        <div class="hero__intro">
+          <h1 class="hero__title main-title">Функциональное <br>питание для котов</h1>
+          <p class="hero__text">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="hero__img">
+          <picture>
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-cans/can-desktop@1x.png 1x, images/hero-cans/can-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-cans/can-tablet@1x.png 1x, images/hero-cans/can-tablet@2x.png 2x">
+            <img class="hero__image" src="images/hero-cans/can-mobile@1x.png" width="280" height="270" srcset="images/hero-cans/can-mobile@2x.png 2x" alt="Банка с кормом Cat Energy Pro с курицей 500 грамм.">
+          </picture>
+        </div>
+        <a class="hero__button button" href="#">Подобрать программу</a>
       </div>
-      <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-cans/can-desktop@1x.png 1x, images/hero-cans/can-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-cans/can-tablet@1x.png 1x, images/hero-cans/can-tablet@2x.png 2x">
-        <img class="hero__image" src="images/hero-cans/can-mobile@1x.png" width="280" height="270" srcset="images/hero-cans/can-mobile@2x.png 2x" alt="Банка с кормом Cat Energy Pro с курицей 500 грамм.">
-      </picture>
-      <a class="hero__button button" href="#">Подобрать программу</a>
     </section>
   </header>
   <main class="main">
@@ -146,25 +150,29 @@
       </div>
     </section>
   </main>
-  <footer class="footer ">
+  <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo logo" aria-current="page" href="index.html">
-        <img class="logo__image logo__image--text" src="images/logos/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy.">
+      <a class="footer__logo logo" href="index.html" aria-label="Перейти на главную страницу.">
+        <svg class="logo__image logo__image--text" width="128" height="24" aria-hidden="true" focusable="false">
+          <use href="images/icons/stack.svg#footer-logo-text"></use>
+        </svg>
       </a>
       <ul class="footer__social social list-reset">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="HTML Academy в Вконтакте."></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Канал HTML Academy на Youtube."></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Группа HTML Academy в Телеграме."></a>
         </li>
       </ul>
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Интенсив HTML Academy. Адаптивная верстка.">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy.">
+        <svg class="copyright__logo-image" width="27" height="34" aria-hidden="true" focusable="false">
+          <use href="images/icons/stack.svg#html-academy-logo"></use>
+        </svg>
       </a>
     </div>
   </footer>

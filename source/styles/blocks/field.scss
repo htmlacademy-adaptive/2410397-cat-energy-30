@@ -25,14 +25,16 @@
   }
 
   &:focus {
-    border: 2px solid $base-color-text;
+    border-color: $base-color-text;
     outline: none;
+    box-shadow: 0 0 0 1px $base-color-text;
   }
 
   &--error,
   &--error:hover,
   &--error:focus {
-    border: 2px solid $input-error;
+    border-color: $input-error;
     outline: none;
+    box-shadow: 0 0 0 1px $input-error;
   }
 }

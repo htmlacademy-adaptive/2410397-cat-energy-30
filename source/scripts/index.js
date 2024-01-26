@@ -1,6 +1,7 @@
 /* в этот файл добавляет скрипты*/
 const menuBtn = document.querySelector('.burger');
 const menu = document.querySelector('.main-header__menu');
+const map = document.querySelector('.contacts__map');
 
 if (document.querySelector('.no-js')) {
   document.querySelector('.no-js').classList.remove('no-js');

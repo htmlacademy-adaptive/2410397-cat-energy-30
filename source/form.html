@@ -20,9 +20,9 @@
             <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logos/logo-tablet.svg">
             <img class="logo__image logo__image--icon" src="images/logos/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy - котик-супергерой.">
           </picture>
-          <img class="logo__image logo__image--text" src="images/logos/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat Energy.">
+          <img class="logo__image logo__image--text" src="images/logos/header-logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat Energy.">
         </a>
-        <button class="main-header__toggle" type="button">
+        <button class="main-header__toggle burger" type="button">
           <span class="visually-hidden burger">Открыть меню</span>
         </button>
         <nav class="main-header__navigation navigation">
@@ -70,15 +70,15 @@
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="control control--radio list-reset">
               <li class="control__item">
-                <input class="control__input control__input--radio" type="radio" id="slim" name="slim" value="slim" checked>
+                <input class="control__input control__input--radio" type="radio" id="slim" name="program" value="slim" checked>
                 <label class="control__label form__label" for="slim">Похудение</label>
               </li>
               <li class="control__item">
-                <input class="control__input control__input--radio" type="radio" id="pro" name="pro" value="slim">
+                <input class="control__input control__input--radio" type="radio" id="pro" name="program" value="pro">
                 <label class="control__label form__label" for="pro">Набор массы</label>
               </li>
               <li class="control__item">
-                <input class="control__input control__input--radio" type="radio" id="unknown" name="unknown" value="slim">
+                <input class="control__input control__input--radio" type="radio" id="unknown" name="program" value="unknown">
                 <label class="control__label form__label" for="unknown">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
@@ -114,19 +114,19 @@
           <h3 class="form__legend section-title title-line">Дополнительно</h3>
           <ul class="control control--checkbox list-reset">
             <li class="control__item">
-              <input class="control__input control__input--checkbox" type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked>
+              <input class="control__input control__input--checkbox" type="checkbox" id="sweetener" name="extra" value="sweetener" checked>
               <label class="control__label form__label" for="sweetener">Сахарозаменитель</label>
             </li>
             <li class="control__item">
-              <input class="control__input control__input--checkbox" type="checkbox" id="water" name="water" value="water">
+              <input class="control__input control__input--checkbox" type="checkbox" id="water" name="extra" value="water">
               <label class="control__label form__label" for="water">Питьевая вода</label>
             </li>
             <li class="control__item">
-              <input class="control__input control__input--checkbox" type="checkbox" id="milk" name="milk" value="milk">
+              <input class="control__input control__input--checkbox" type="checkbox" id="milk" name="extra" value="milk">
               <label class="control__label form__label" for="milk">Молоко</label>
             </li>
             <li class="control__item">
-              <input class="control__input control__input--checkbox" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
+              <input class="control__input control__input--checkbox" type="checkbox" id="vitamins" name="extra" value="vitamins">
               <label class="control__label form__label" for="vitamins">Витамины</label>
             </li>
           </ul>
@@ -164,23 +164,27 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo logo" href="index.html">
-        <img class="logo__image logo__image--text" src="images/logos/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy.">
+      <a class="footer__logo logo" href="index.html" aria-label="Перейти на главную страницу.">
+        <svg class="logo__image logo__image--text" width="128" height="24" aria-hidden="true" focusable="false">
+          <use href="images/icons/stack.svg#footer-logo-text"></use>
+        </svg>
       </a>
       <ul class="footer__social social list-reset">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="HTML Academy в Вконтакте."></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Канал HTML Academy на Youtube."></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Группа HTML Academy в Телеграме."></a>
         </li>
       </ul>
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Интенсив HTML Academy. Адаптивная верстка.">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy.">
+        <svg class="copyright__logo-image" width="27" height="34" aria-hidden="true" focusable="false">
+          <use href="images/icons/stack.svg#html-academy-logo"></use>
+        </svg>
       </a>
     </div>
   </footer>

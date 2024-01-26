@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   min-width: 160px;
 
   border-top: var(--border-line);
@@ -23,25 +24,16 @@
 }
 
 .social__link {
-  display: flex;
+  display: block;
   width: 28px;
   height: 22px;
 
   text-decoration: none;
 
-  background-color: #666666;
+  background-color: $special-grey;
 
   mask-position: center;
   mask-repeat: no-repeat;
-
-  &:hover,
-  &:focus {
-    background-color: $bg-basic;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 
   &--vkontakte {
     mask-image: url("../../images/icons/stack.svg#vk");
@@ -53,5 +45,14 @@
 
   &--telegram {
     mask-image: url("../../images/icons/stack.svg#telegram");
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bg-basic;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

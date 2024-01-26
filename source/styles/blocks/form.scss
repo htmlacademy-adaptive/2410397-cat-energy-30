@@ -108,20 +108,14 @@
   @media (min-width: $tablet-width) {
     row-gap: 20px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   grid-template-columns: repeat(2, 1fr);
-  // }
 }
 
 .form__item {
   display: grid;
   align-items: center;
-  width: fit-content;
 
-  column-gap: 13px;
-
-  grid-template-columns: repeat(2, auto);
+  gap: 5px 13px;
+  grid-template-columns: auto 1fr;
 }
 
 .form__label {
@@ -180,15 +174,15 @@
     }
   }
 
-  &:focus {
+  &:focus-within {
     &::after {
-      border-color: $bg-basic;
+      background-color: $bg-basic;
     }
   }
 
   &:has(.field--error) {
     &::after {
-      border-color: $input-error;
+      background-color: $input-error;
     }
   }
 }

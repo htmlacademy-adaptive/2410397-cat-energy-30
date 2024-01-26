@@ -106,6 +106,8 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  gap: 15px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -117,7 +119,6 @@
     align-self: center;
     width: 32px;
     height: 10px;
-    margin-left: 15px;
 
     background-image: url("../../images/icons/stack.svg#arrow");
     background-repeat: no-repeat;
@@ -126,8 +127,11 @@
 
   &:hover::after {
     background-position: 0;
+
+    transition: background-position 0.3s ease-out;
   }
 
+  &:active,
   &:active::after {
     opacity: 0.3;
   }

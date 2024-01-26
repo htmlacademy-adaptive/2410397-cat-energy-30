@@ -1,17 +1,8 @@
 .copyright {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
-
-  text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
-.copyright__text {
-  margin: auto;
-  margin-left: 0;
 
   font-family: $primary-font;
   font-size: 16px;
@@ -19,25 +10,17 @@
   color: $base-color-text;
   text-decoration: none;
 
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.copyright__image {
-  background-color: #666666;
-
-  mask-image: url("../../images/icons/stack.svg#html-academy-logo");
-  mask-repeat: no-repeat;
-  mask-size: 27px 34px;
+  fill: $special-grey;
 
   @media (min-width: $tablet-width) {
-    margin-left: 23px;
+    padding: 0;
+
+    gap: 23px;
   }
 
   &:hover,
   &:focus {
-    background-color: $bg-basic;
+    fill: $bg-basic;
   }
 
   &:active {

@@ -12,6 +12,7 @@
   grid-template-columns: 140px 1fr;
 
   @media (min-width: $tablet-width) {
+    height: 100%;
     padding: 0 37px 40px;
 
     background-color: $bg-extra;
@@ -20,49 +21,20 @@
   }
 }
 
-.card--more {
-  padding-top: 78px;
-
-  text-align: center;
-
-  background-image: url("../../images/icons/stack.svg#plus");
-  background-repeat: no-repeat;
-  background-position: center 25px;
-  background-size: 30px 30px;
-
-  @media (min-width: $tablet-width) {
-    background-size: 60px 60px;
-  }
-}
-
-.card--more .card__container {
-  @media (min-width: $tablet-width) {
-    background: none;
-    border: 2px solid $bg-extra;
-  }
-}
-
-.card--more .card__heading {
-  grid-column: 1/-1;
-}
-
-.card--more .card__details-text {
-  margin: 0;
-  margin-bottom: 21px;
-
-  grid-column: 1/-1;
-}
-
 .card__image {
   display: block;
-  width: 100%;
-  height: 100%;
   margin: 0;
 
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
-    margin: -111px auto 0;
+    width: 200px;
+    height: 210px;
+    margin: -71px auto 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
@@ -97,6 +69,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     opacity: 0.6;
   }
 
@@ -159,4 +132,56 @@
 
 .card__button {
   grid-column: 1/-1;
+}
+
+.card--more {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {}
+}
+
+.card--more .card__container {
+  display: block;
+
+  background-image: url("../../images/icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-position: center top 0;
+  background-size: 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+
+    background-color: unset;
+    background-position: center top 50px;
+    background-size: 60px 60px;
+    border: 2px solid $bg-extra;
+  }
+}
+
+.card--more .card__heading {
+  margin-bottom: 8px;
+  padding: 53px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    padding: 92px 34px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+    padding: 92px 0 0;
+  }
+}
+
+.card--more .card__details-text {
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 10px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 34px;
+  }
 }
