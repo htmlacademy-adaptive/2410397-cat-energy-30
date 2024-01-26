@@ -1,24 +1,108 @@
-// .example {}
+.example {
+  padding: 25px 0 40px;
+
+  background-color: $bg-for-example;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 101px;
+
+    background-image: linear-gradient($white 58%, $bg-for-example 58%);
+    border-top: var(--border-line);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    justify-content: space-between;
+    padding: 0 20px 75px;
+
+    background-image: linear-gradient($white 23%, $bg-for-example 23%);
+    border: none;
+
+    gap: 227px;
+    grid-template-columns: 1fr 560px;
+  }
+}
 
 .example__container {
-  background-color: $bg-for-example;
+  @media (min-width: $desktop-width) {
+    padding: 0 90px;
+  }
 }
 
-// .example__title {}
+.example__title {
+  margin-bottom: 40px;
 
-// .example__content {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 
-// .example__results-wrapper {}
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
 
-// .example__results {}
+.example__content {
+  margin: var(--margin-reset);
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.example__results-wrapper {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.example__results {
+  margin-bottom: 20px;
+}
 
 .example__cost {
+  margin: var(--margin-reset);
+
   font-family: $secondary-font;
   line-height: 20px;
+  text-align: center;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
-// .example__cost--value {}
+.example__cost--value {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 9px;
+  }
 
-// .example__slider {}
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-left: 62px;
+  }
+}

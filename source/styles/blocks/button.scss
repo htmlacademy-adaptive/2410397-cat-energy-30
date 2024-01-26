@@ -13,9 +13,29 @@
   background-color: $bg-basic;
   border: none;
 
+  &:hover,
+  &:focus {
+    background-color: $bg-state;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
   &--secondary {
+    width: 100%;
+
     color: $base-color-text;
 
     background-color: $bg-extra;
+  }
+
+  &--secondary:hover,
+  &--seconadary:focus {
+    background-color: $catalog-color;
+  }
+
+  &--secondary:active {
+    color: $base-color-text;
   }
 }

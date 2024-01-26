@@ -1,37 +1,116 @@
-// .navigation {}
-
-// .navigation__list {}
-
-
-@media (min-width: $tablet-width) {
-  .navigation__list {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    width: 440px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .navigation__list {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    width: 610px;
-  }
-}
-
-// .navigation__item {}
-
-.navigation__link {
-  display: inline-block;
-
+.navigation {
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
   color: $black;
-  text-transform: uppercase;
-  text-decoration: none;
+
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+
+    background-color: transparent;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
 }
 
-// .navigation__link--current {}
+.navigation--index .navigation__link--current {
+  @media (min-width: $desktop-width) {
+    text-decoration-color: $white;
+  }
+}
+
+.navigation__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+    width: 440px;
+
+    @media (min-width: $desktop-width) {
+      width: 480px;
+    }
+  }
+}
+
+.navigation__item {
+  display: flex;
+  justify-content: center;
+  margin: 0 -20px;
+  padding: 22px 0 24px;
+  overflow: hidden;
+
+  border-top: var(--border-line);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 14px 0 12px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 0 13px;
+  }
+}
+
+.navigation__link {
+  position: relative;
+
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  cursor: pointer;
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 42px;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: #e6e6e6;
+    box-shadow: 100vw 0 0 #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      text-decoration: underline;
+
+      text-decoration-color: $bg-basic;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-underline-offset: 8px;
+    }
+  }
+}

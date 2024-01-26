@@ -1,21 +1,29 @@
 .copyright {
-  text-decoration: none;
-}
-
-.copyright__text {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
 
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
   color: $base-color-text;
   text-decoration: none;
-}
 
-.copyright__image {
-  // background-color: #666666;
-  mask-image: url("../../images/icons/stack.svg#html-academy-logo");
-  mask-position: center, contain;
-  mask-repeat: no-repeat;
-  mask-size: 27px 34px;
+  fill: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    gap: 23px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $bg-basic;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

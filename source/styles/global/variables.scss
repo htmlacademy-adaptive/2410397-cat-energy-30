@@ -9,6 +9,13 @@ $almost-black: #111111;
 $base-color-text: #444444;
 $special-dark-grey: #222222;
 
+// Additional colors
+$border-color: #d9d9d9;
+$special-grey: #666666;
+$catalog-color: #ebebeb;
+$input-border-color: #e7e7e7;
+$input-error: #ff8282;
+
 // Backgrounds
 $bg-cats: rgba(104, 183, 56, 0.85);
 $bg-basic: #68b738;
@@ -17,6 +24,6 @@ $bg-state: #5eaa2f;
 $bg-for-example: #eaeaea;
 
 //media-variables
+$mobile-width-only: 767.98px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
-$mobile-width: 320px;

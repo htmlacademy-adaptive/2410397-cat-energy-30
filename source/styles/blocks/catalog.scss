@@ -1,11 +1,76 @@
-// .catalog {}
-
-// .catalog__container {}
+// .catalog__container {
+//   @media (max-width: $mobile-width-only) {
+//     padding: 0;
+//   }
+// }
 
 .catalog__title {
-  line-height: 36px; //вынести в медиа-запрос только для мобильных
+  margin-bottom: 41px;
+  padding: 27px 0 0;
+
+  line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
-// .catalog__list {}
+.catalog__list {
+  position: relative;
 
-// .catalog__card {}
+  display: grid;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
+    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+
+    gap: 63px 80px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: $catalog-color;
+      box-shadow: 100vw 0 0 $catalog-color;
+    }
+  }
+}
+
+.catalog__card {
+  position: relative;
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: $catalog-color;
+      box-shadow: 100vw 0 0 $catalog-color;
+    }
+  }
+}
