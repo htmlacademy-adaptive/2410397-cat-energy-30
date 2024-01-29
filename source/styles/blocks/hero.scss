@@ -1,23 +1,13 @@
 .hero {
-  padding-bottom: 20px;
-
   font-family: $secondary-font;
   text-align: center;
   color: $white;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
-  }
 }
 
 .hero__container {
+
   @media (min-width: $tablet-width) {
     display: grid;
-    padding-bottom: 0;
 
     text-align: left;
     color: $black;
@@ -27,7 +17,6 @@
     align-items: start;
     min-height: 579px;
     padding-top: 29px;
-    padding-bottom: 46px;
 
     grid-template-columns: auto 1fr;
   }
@@ -54,7 +43,7 @@
     background: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     padding: 80px 30px 20px 80px;
 

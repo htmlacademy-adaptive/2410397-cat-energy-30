@@ -12,7 +12,6 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    justify-content: space-between;
     padding: 0 20px 75px;
 
     background-image: linear-gradient($white 23%, $bg-for-example 23%);
@@ -71,14 +70,18 @@
 }
 
 .example__results {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .example__cost {
   margin: 0;
 
-  line-height: 20px;
   font-family: $secondary-font;
+  line-height: 20px;
   text-align: center;
   color: $black;
   text-transform: uppercase;
@@ -96,6 +99,8 @@
 }
 
 .example__cost--value {
+  margin-left: 4px;
+
   @media (min-width: $tablet-width) {
     display: block;
     padding-top: 9px;
@@ -103,6 +108,6 @@
 
   @media (min-width: $desktop-width) {
     display: inline;
-    margin-left: 62px;
+    margin-left: 66px;
   }
 }

@@ -71,6 +71,10 @@
   }
 }
 
+.main-header__logo[aria-current="page"] {
+  pointer-events: none;
+}
+
 .main-header__logo .logo__image--text {
   @media (min-width: $desktop-width) {
     width: 118px;
