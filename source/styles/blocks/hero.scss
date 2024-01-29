@@ -27,7 +27,7 @@
     align-items: start;
     min-height: 579px;
     padding-top: 29px;
-    padding-bottom: 50px;
+    padding-bottom: 46px;
 
     grid-template-columns: auto 1fr;
   }
@@ -46,7 +46,17 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 38px 20px 20px 90px;
+    padding: 64px 20px 20px 90px;
+
+    text-align: left;
+    color: $black;
+
+    background: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 80px 30px 20px 80px;
 
     text-align: left;
     color: $black;
@@ -69,7 +79,7 @@
 }
 
 .hero__text {
-  margin: var(--margin-reset);
+  margin: 0;
 
   line-height: 14px;
   text-transform: uppercase;
@@ -83,12 +93,12 @@
 .hero__image {
   width: 280px;
   height: 270px;
-  margin: -135px auto 3px;
+  margin: -135px auto 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     z-index: -1;
 
-    order: 1;
     width: 100%;
     max-width: 709px;
     height: 609px;
@@ -96,7 +106,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    order: unset;
     width: 552px;
     height: 499px;
     margin: 0 0 0 -79px;
@@ -116,6 +125,9 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 39%;
+
     width: 244px;
     margin: 0 0 0 90px;
     padding: 14px;
@@ -125,6 +137,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    top: 66%;
+
+    margin: 0 0 0 80px;
   }
 }

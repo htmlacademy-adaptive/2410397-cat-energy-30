@@ -16,7 +16,7 @@
 
   @media (min-width: $tablet-width) {
     top: 81px;
-    left: 59%;
+    left: 58%;
 
     width: 268px;
     height: 211px;
@@ -66,12 +66,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
     padding: 0;
 
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
     padding-left: 162px;
   }
 }
@@ -85,12 +87,15 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
+    margin-bottom: 0;
+    padding-bottom: 53px;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 457px;
+    padding-bottom: 27px;
   }
 }
 
@@ -98,9 +103,9 @@
   display: flex;
   width: 170px;
 
-  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  font-family: $secondary-font;
   text-align: center;
   color: $black;
   text-transform: uppercase;

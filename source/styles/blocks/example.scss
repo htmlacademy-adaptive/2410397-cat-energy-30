@@ -4,9 +4,9 @@
   background-color: $bg-for-example;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0 101px;
+    padding: 44px 0 101px;
 
-    background-image: linear-gradient($white 58%, $bg-for-example 58%);
+    background-image: linear-gradient($white 57%, $bg-for-example 57%);
     border-top: var(--border-line);
   }
 
@@ -61,7 +61,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 99px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,10 +75,10 @@
 }
 
 .example__cost {
-  margin: var(--margin-reset);
+  margin: 0;
 
-  font-family: $secondary-font;
   line-height: 20px;
+  font-family: $secondary-font;
   text-align: center;
   color: $black;
   text-transform: uppercase;

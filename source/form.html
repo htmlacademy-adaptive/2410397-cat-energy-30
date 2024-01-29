@@ -16,7 +16,7 @@
       <div class="main-header__menu">
         <a class="main-header__logo logo" href="index.html">
           <picture>
-            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logos/logo-desktop.svg">
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1260px)" srcset="images/logos/logo-desktop.svg">
             <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logos/logo-tablet.svg">
             <img class="logo__image logo__image--icon" src="images/logos/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy - котик-супергерой.">
           </picture>
@@ -58,11 +58,11 @@
               </li>
               <li class="form__item">
                 <label class="form__label" for="weight">Вес (кг):<sup>*</sup></label>
-                <input class="form__input field" type="text" id="weight" name="weight" placeholder="7" required>
+                <input class="form__input field" type="number" id="weight" name="weight" placeholder="7" required>
               </li>
               <li class="form__item">
                 <label class="form__label" for="age">Возраст (лет):</label>
-                <input class="form__input field" type="text" id="age" name="age" placeholder="7">
+                <input class="form__input field" type="number" id="age" name="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
@@ -87,22 +87,22 @@
         <fieldset class="form__group form__group--owner">
           <legend class="visually-hidden" aria-hidden="true">Информация о владельце кота</legend>
           <h3 class="form__legend section-title title-line">Контактные данные <br>(владельца кота)</h3>
-          <div class="form__wrapper">
-            <ul class="form__list list-reset">
-              <li class="form__item">
-                <label class="form__label" for="email">E-mail:<sup>*</sup></label>
-                <span class="form__input-container form__input-container--email">
-                  <input class="form__input field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-                </span>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="tel">Телефон:<sup>*</sup></label>
-                <span class="form__input-container form__input-container--tel">
-                  <input class="form__input field" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-                </span>
-              </li>
-            </ul>
-          </div>
+          <!-- <div class="form__wrapper"> -->
+          <ul class="form__list list-reset">
+            <li class="form__item">
+              <label class="form__label" for="email">E-mail:<sup>*</sup></label>
+              <span class="form__input-container form__input-container--email">
+                <input class="form__input field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </span>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="tel">Телефон:<sup>*</sup></label>
+              <span class="form__input-container form__input-container--tel">
+                <input class="form__input field" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+              </span>
+            </li>
+          </ul>
+          <!-- </div> -->
         </fieldset>
         <div class="form__group form__group--comment">
           <h3 class="form__legend section-title title-line">Комментарий</h3>
@@ -150,11 +150,11 @@
         <noscript>
           <a class="contacts__map-link" href="#">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="images/maps/map-desktop@1x.webp 1x, images/maps/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1260px)" srcset="images/maps/map-desktop@1x.webp 1x, images/maps/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="images/maps/map-tablet@1x.webp 1x, images/maps/map-tablet@2x.webp 2x">
               <source type="image/webp" srcset="images/maps/map-mobile@1x.webp 1x, images/maps/map-mobile@2x.webp 2x">
 
-              <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/maps/map-desktop@1x.png 1x, images/maps/map-desktop@2x.png 2x">
+              <source width="1260" height="400" type="image/png" media="(min-width: 1260px)" srcset="images/maps/map-desktop@1x.png 1x, images/maps/map-desktop@2x.png 2x">
               <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/maps/map-tablet@1x.png 1x, images/maps/map-tablet@2x.png 2x">
               <img src="images/maps/map-mobile@1x.png" srcset="images/maps/map-mobile@2x.png" width="320" height="362" alt="Компания Cat Energy на карте Санкт-Петербурга.">
             </picture>

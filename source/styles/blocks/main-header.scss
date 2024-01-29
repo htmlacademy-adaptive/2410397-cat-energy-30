@@ -71,6 +71,12 @@
   }
 }
 
+.main-header__logo .logo__image--text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
+}
+
 .main-header__navigation {
   position: absolute;
   top: 100%;

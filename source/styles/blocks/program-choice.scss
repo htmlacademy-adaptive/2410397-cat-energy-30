@@ -13,8 +13,8 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
-    padding-top: 65px;
+    margin-bottom: 65px;
+    padding-top: 77px;
     padding-left: 40px;
   }
 
@@ -26,17 +26,22 @@
 }
 
 .program-choice__info {
-  margin: var(--margin-reset);
+  margin: 0;
   margin-bottom: 39px;
+  padding-right: 7px;
 
   font-family: $secondary-font;
   color: $black;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 312px;
-    margin-bottom: 66px;
+    width: 397px;
+    margin-bottom: 62px;
+    // padding-right: 278px;
     padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
