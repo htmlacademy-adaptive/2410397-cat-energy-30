@@ -16,7 +16,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -40,5 +39,15 @@
 
   &:active {
     color: #6b6b6b;
+  }
+}
+
+.footer__social {
+  @media (min-width: $tablet-width) {
+    margin: 0 110px 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 367px 0 auto;
   }
 }

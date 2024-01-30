@@ -4,7 +4,7 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 78px 0 96px;
+    padding: 65px 0 84px;
 
     line-height: 60px;
   }
@@ -21,14 +21,14 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 69px;
 
     gap: 60px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin-bottom: 76px;
 
     gap: 63px 80px;
     grid-template-columns: repeat(4, 1fr);

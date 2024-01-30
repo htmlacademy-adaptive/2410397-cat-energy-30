@@ -16,14 +16,14 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 107px;
+    margin-bottom: 83px;
     margin-left: 40px;
 
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 103px;
+    margin-bottom: 79px;
     margin-left: 0;
   }
 }
@@ -119,6 +119,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 5px;
+
     text-align: left;
   }
 }
@@ -127,6 +129,8 @@
   text-align: right;
 
   @media (min-width: $desktop-width) {
+    padding: 5px 12px 0 0;
+
     text-align: center;
   }
 }

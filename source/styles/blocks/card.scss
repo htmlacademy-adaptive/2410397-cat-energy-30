@@ -23,6 +23,8 @@
 }
 
 .card__image-link {
+  align-self: start;
+
   justify-self: center;
 
   @media (min-width: $tablet-width) {
@@ -54,7 +56,11 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
   }
 }
 
@@ -123,7 +129,7 @@
   grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 3px;
+    padding-bottom: 4px;
 
     font-size: 16px;
     line-height: 20px;
