@@ -64,6 +64,7 @@
   border-top: var(--border-line);
 
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 14px;
 
   @media (min-width: $tablet-width) {
     padding: 24px 38px 28px;
@@ -75,6 +76,7 @@
     border-left: var(--border-line);
 
     grid-template-columns: 2.5fr 1fr 0.6fr;
+    row-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,54 +90,40 @@
   }
 }
 
-.additions__item-title {
-  margin: var(--margin-reset);
-  margin-bottom: 13px;
+.additions__item h3,
+.additions__item p {
+  margin: 0;
+}
 
-  font-weight: 400;
+.additions__item-title {
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
-  font-family: $secondary-font;
+  font-weight: 400;
   color: $special-dark-grey;
   text-transform: uppercase;
 
   grid-column: 1/-1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
-
     font-size: 20px;
     line-height: 20px;
 
     grid-column: 1;
   }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
 }
 
 .additions__item-text {
-  margin: var(--margin-reset);
-  margin-bottom: 15px;
-
   @media (min-width: $tablet-width) {
-    margin-top: 4px;
-    margin-bottom: var(--margin-reset);
-
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    margin: var(--margin-reset);
-
     text-align: left;
   }
 }
 
 .additions__item-value {
-  margin: 0;
-
   text-align: right;
 
   @media (min-width: $desktop-width) {

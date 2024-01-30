@@ -115,11 +115,11 @@
   background-color: $bg-basic;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-}
 
-.control__input:disabled,
-.control__input:disabled+.control__label {
-  opacity: 0.3;
+  &:disabled,
+  &:disabled+.control__label {
+    opacity: 0.3;
+  }
 }
 
 .control__label {

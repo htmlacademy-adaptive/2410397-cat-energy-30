@@ -10,6 +10,7 @@
   display: grid;
 
   grid-template-columns: 140px 1fr;
+  grid-template-rows: auto 1fr auto;
 
   @media (min-width: $tablet-width) {
     height: 100%;
@@ -21,27 +22,29 @@
   }
 }
 
-.card__image {
-  display: block;
-  width: 140px;
-  height: 107px;
-  margin: 0;
-
-  object-fit: cover;
+.card__image-link {
+  justify-self: center;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 210px;
     margin: -71px auto 22px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 169px;
     margin-bottom: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.card__image img {
+.card__image-link img {
   display: block;
   width: 100%;
   height: 100%;
@@ -145,8 +148,6 @@
 
 .card--more {
   text-align: center;
-
-  @media (min-width: $tablet-width) {}
 }
 
 .card--more .card__container {
@@ -198,6 +199,5 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 67px;
-
   }
 }

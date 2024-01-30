@@ -2,9 +2,9 @@
   width: 100%;
   padding: 13px 14px;
 
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
-  font-family: $secondary-font;
   color: $base-color-text;
   text-transform: uppercase;
 
@@ -15,28 +15,5 @@
 
     font-size: 20px;
     line-height: 30px;
-  }
-
-  &::placeholder {
-    color: $base-color-text;
-  }
-
-  &:hover {
-    border: var(--border-line);
-    outline: none;
-  }
-
-  &:focus {
-    border-color: $base-color-text;
-    outline: none;
-    box-shadow: 0 0 0 1px $base-color-text;
-  }
-
-  &--error,
-  &--error:hover,
-  &--error:focus {
-    border-color: $input-error;
-    outline: none;
-    box-shadow: 0 0 0 1px $input-error;
   }
 }

@@ -130,7 +130,7 @@
   align-items: center;
 
   gap: 5px 13px;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: max-content 1fr;
 }
 
 .form__label {
@@ -138,6 +138,31 @@
 }
 
 .form__input {
+  &::placeholder {
+    color: $base-color-text;
+
+    opacity: 1;
+  }
+
+  &:hover {
+    border: var(--border-line);
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $base-color-text;
+    outline: none;
+    box-shadow: 0 0 0 1px $base-color-text;
+  }
+
+  &--error,
+  &--error:hover,
+  &--error:focus {
+    border-color: $input-error;
+    outline: none;
+    box-shadow: 0 0 0 1px $input-error;
+  }
+
   &[type="number"] {
     appearance: textfield;
   }

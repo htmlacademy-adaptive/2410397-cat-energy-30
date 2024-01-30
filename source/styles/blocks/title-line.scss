@@ -1,63 +1,30 @@
-// .title-line {
-//   position: relative;
-
-//   width: fit-content;
-
-//   background-color: $white;
-//   box-shadow: -20px 0 0 0 $white, 20px 0 0 0 $white;
-
-//   @media (min-width: $tablet-width) {
-//     box-shadow: -40px 0 0 0 $white, 40px 0 0 0 $white;
-//   }
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 17px;
-//     right: 0;
-//     z-index: -1;
-
-//     width: 100vw;
-//     height: 2px;
-
-//     background-color: $bg-basic;
-//     box-shadow: 100vw 0 0 $bg-basic;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     top: 24px;
-//   }
-// }
-
 .title-line {
-  overflow: hidden;
+  position: relative;
 
-  &::before,
-  &::after {
+  width: fit-content;
+
+  background-color: $white;
+  box-shadow: -20px 0 0 0 $white, 20px 0 0 0 $white;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: -40px 0 0 0 $white, 40px 0 0 0 $white;
+  }
+
+  &::before {
     content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: -1;
 
-    display: inline-block;
-    width: 100%;
-    /* Устанавливаем ширину в 100%, что сделает делает линию равной ширине тега заголовка */
+    width: 100vw;
     height: 2px;
 
-    vertical-align: middle;
-    /* Высота линий */
-
     background-color: $bg-basic;
-    /* Цвет линий */
+    box-shadow: 100vw 0 0 $bg-basic;
 
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
   }
-}
-
-.title-line::before {
-  left: -40px;
-
-  margin-left: -100%;
-}
-
-.title-line::after {
-  right: -40px;
-
-  margin-right: -100%;
 }
