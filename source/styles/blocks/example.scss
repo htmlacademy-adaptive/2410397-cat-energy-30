@@ -70,10 +70,10 @@
 }
 
 .example__results {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 39px;
+    margin-bottom: 45px;
   }
 }
 
@@ -109,5 +109,15 @@
   @media (min-width: $desktop-width) {
     display: inline;
     margin-left: 66px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -90px;
   }
 }

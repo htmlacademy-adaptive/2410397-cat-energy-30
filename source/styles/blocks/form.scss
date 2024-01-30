@@ -19,10 +19,9 @@
   }
 }
 
-
 .form__group {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   padding: 0;
 
   border: none;
@@ -49,8 +48,10 @@
 }
 
 .form__group--radio {
-  @media (max-width: $tablet-width) {
-    margin-bottom: 38px;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
   }
 }
 
@@ -58,7 +59,7 @@
   margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 98px;
+    margin-bottom: 73px;
   }
 }
 
@@ -74,10 +75,10 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
+    margin-bottom: 84px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 78px;
   }
 }
@@ -86,7 +87,7 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 57px;
   }
 }
 
@@ -137,39 +138,9 @@
   text-transform: uppercase;
 }
 
-.form__input {
-  &::placeholder {
-    color: $base-color-text;
-
-    opacity: 1;
-  }
-
-  &:hover {
-    border: var(--border-line);
-    outline: none;
-  }
-
-  &:focus {
-    border-color: $base-color-text;
-    outline: none;
-    box-shadow: 0 0 0 1px $base-color-text;
-  }
-
-  &--error,
-  &--error:hover,
-  &--error:focus {
-    border-color: $input-error;
-    outline: none;
-    box-shadow: 0 0 0 1px $input-error;
-  }
-
-  &[type="number"] {
-    appearance: textfield;
-  }
+.form__input[type="number"] {
+  appearance: textfield;
 }
-
-// .form__legend {}
-
 
 .form__legend br {
   @media (min-width: $tablet-width) {
@@ -243,6 +214,13 @@
 
 .form__button {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .form__note {
@@ -255,6 +233,8 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    align-self: center;
+
     font-size: 16px;
 
     justify-self: start;

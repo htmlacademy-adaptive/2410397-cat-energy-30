@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 270px 57px 52px;
+    padding: 75px 270px 59px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,12 +20,12 @@
 
   @media (min-width: $tablet-width) {
     background-position: top 81px right 63px;
-    background-size: 200px 211px;
+    background-size: 200px 204px;
   }
 
   @media (min-width: $desktop-width) {
     background-position: top 41px left 52px;
-    background-size: 100px 97px;
+    background-size: 100px 106px;
   }
 }
 
@@ -88,9 +88,9 @@
   display: flex;
   width: fit-content;
 
-  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  font-family: $secondary-font;
   text-align: center;
   color: $black;
   text-transform: uppercase;
@@ -101,6 +101,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    gap: 25px;
   }
 
   &::after {
