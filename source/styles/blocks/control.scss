@@ -123,7 +123,7 @@
 }
 
 .control__input:disabled,
-.control__input:disabled+.control__label {
+.control__input:disabled + .control__label {
   opacity: 0.3;
 }
 

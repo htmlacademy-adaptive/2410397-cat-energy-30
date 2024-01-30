@@ -88,9 +88,9 @@
   display: flex;
   width: fit-content;
 
-  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  font-family: $secondary-font;
   text-align: center;
   color: $black;
   text-transform: uppercase;
@@ -103,8 +103,6 @@
     line-height: 30px;
 
     gap: 25px;
-
-
   }
 
   &::after {
