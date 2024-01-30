@@ -85,6 +85,11 @@
     width: 40px;
     height: 40px;
   }
+
+  &:hover,
+  &:focus {
+    border-color: #bababa;
+  }
 }
 
 .control__input[type="checkbox"]:checked {
@@ -110,6 +115,11 @@
   background-color: $bg-basic;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+
+  &:disabled,
+  &:disabled+.control__label {
+    opacity: 0.3;
+  }
 }
 
 .control__label {

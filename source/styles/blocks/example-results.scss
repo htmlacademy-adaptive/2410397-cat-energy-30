@@ -2,8 +2,8 @@
   display: grid;
 
   text-align: center;
-  column-gap: 32px;
 
+  gap: 5px 32px;
   grid-template-columns: repeat(2, 124px);
 
   @media (min-width: $tablet-width) {
