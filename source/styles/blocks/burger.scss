@@ -30,12 +30,11 @@
   }
 }
 
-.burger.is-open {
-  background-image: url("../../images/icons/stack.svg#close-button");
-  background-size: 18px 18px;
+.no-js .burger {
+  display: none;
 }
 
-.no-js .burger {
+.burger.is-open {
   background-image: url("../../images/icons/stack.svg#close-button");
   background-size: 18px 18px;
 }
