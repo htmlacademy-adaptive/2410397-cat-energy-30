@@ -11,20 +11,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    padding: 0 20px 75px;
+    padding: 0 0 75px 0;
 
     background-image: linear-gradient($white 23%, $bg-for-example 23%);
     border: none;
-
-    gap: 227px;
-    grid-template-columns: 1fr 560px;
   }
 }
 
 .example__container {
   @media (min-width: $desktop-width) {
-    padding: 0 90px;
+    display: grid;
+    // padding: 0 90px;
+
+    gap: 227px;
+    grid-template-columns: 1fr 560px;
   }
 }
 

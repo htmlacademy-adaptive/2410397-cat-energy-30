@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-width: 160px;
   padding: 9px 0;
 
   border-top: var(--border-line);
@@ -13,11 +12,18 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    justify-content: start;
+    max-width: 400px;
+    padding: 0 10px 0 45px;
 
     border: none;
 
     gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
+    padding: 0 8px 0 43px;
   }
 }
 

@@ -14,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 61px 40px;
+    padding: 65px 40px 60px;
 
     grid-template-columns: repeat(2, 163px);
   }
@@ -36,9 +36,9 @@
 .contacts__invitation {
   margin: 0;
 
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  font-family: $secondary-font;
   color: $almost-black;
   text-transform: uppercase;
 
@@ -49,8 +49,8 @@
 }
 
 .contacts__address {
-  font-style: normal;
   line-height: 20px;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
     text-align: end;

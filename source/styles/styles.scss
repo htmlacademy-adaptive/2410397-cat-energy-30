@@ -4,13 +4,14 @@
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
 @import "./global/global.scss";
+@import "./global/container.scss";
+@import "./global/list-reset.scss";
+@import "./global/title-line.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
 @import "./blocks/main-title.scss";
 @import "./blocks/section-title.scss";
-@import "./blocks/visually-hidden.scss";
-@import "./blocks/list-reset.scss";
-@import "./blocks/container.scss";
 @import "./blocks/button.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/burger.scss";
@@ -34,4 +35,3 @@
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
-@import "./blocks/title-line.scss";
