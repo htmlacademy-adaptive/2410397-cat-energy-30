@@ -138,6 +138,7 @@
   text-transform: uppercase;
 }
 
+// убирает стрелочки с числовых инпутов
 .form__input[type="number"] {
   appearance: textfield;
 }
@@ -195,6 +196,7 @@
     }
   }
 
+  // перекрашивает иконки при некорректном значении инпута
   &:has(.field--error) {
     &::after {
       background-color: $input-error;
